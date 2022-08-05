@@ -365,7 +365,7 @@ public class GameManager : MonoBehaviour, IOnEventCallback, IInRoomCallbacks, IC
         coins = GameObject.FindGameObjectsWithTag("coin");
         levelUIColor.a = .7f;
 
-        StartCoroutine(DataLog());
+        //StartCoroutine(DataLog());
 
         InputSystem.controls.LoadBindingOverridesFromJson(GlobalController.Instance.controlsJson);
 

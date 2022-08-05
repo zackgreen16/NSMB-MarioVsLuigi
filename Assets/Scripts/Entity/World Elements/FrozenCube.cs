@@ -1,10 +1,9 @@
 using UnityEngine;
 using Photon.Pun;
+using NSMB.Utils;
 
 // maybe a better name for the script
 public class FrozenCube : HoldableEntity {
-
-    private static int GROUND_LAYER_ID = -1;
 
     public float throwSpeed = 10f, shakeSpeed = 1f, shakeAmount = 0.1f;
     public SpriteRenderer spriteRenderer;
@@ -24,9 +23,6 @@ public class FrozenCube : HoldableEntity {
         dead = false;
         holderOffset = Vector2.one;
         body.velocity = Vector2.zero;
-
-        if (GROUND_LAYER_ID == -1)
-            GROUND_LAYER_ID = LayerMask.NameToLayer("Ground");
 
         if (photonView && photonView.InstantiationData != null) {
             int id = (int) photonView.InstantiationData[0];
@@ -102,7 +98,7 @@ public class FrozenCube : HoldableEntity {
             PhotonNetwork.Destroy(photonView);
             return;
         }
-        if (photonView.IsMineOrLocal() && holder && Utils.IsTileSolidAtWorldLocation(body.position + hitbox.offset * transform.lossyScale)) {
+        if (photonView.IsMine && holder && Utils.IsTileSolidAtWorldLocation(body.position + hitbox.offset * transform.lossyScale)) {
             photonView.RPC("Kill", RpcTarget.All);
             return;
         }
@@ -115,7 +111,7 @@ public class FrozenCube : HoldableEntity {
 
         //our entity despawned. remove.
         if (entity == null) {
-            if (photonView.IsMineOrLocal()) {
+            if (photonView.IsMine) {
                 PhotonNetwork.Destroy(photonView);
             }
             Destroy(gameObject);
@@ -127,7 +123,7 @@ public class FrozenCube : HoldableEntity {
             HandleTile();
 
         if (fastSlide && physics.onGround && physics.floorAngle != 0) {
-            RaycastHit2D ray = Physics2D.BoxCast(body.position + Vector2.up * hitbox.size / 2f, hitbox.size, 0, Vector2.down, 0.2f, 1 << GROUND_LAYER_ID);
+            RaycastHit2D ray = Physics2D.BoxCast(body.position + Vector2.up * hitbox.size / 2f, hitbox.size, 0, Vector2.down, 0.2f, Layers.MaskOnlyGround);
             if (ray) {
                 body.position = new Vector2(body.position.x, ray.point.y + Physics2D.defaultContactOffset);
                 if (ray.distance < 0.1f)
@@ -143,13 +139,13 @@ public class FrozenCube : HoldableEntity {
 
                 if (flying)
                     fallen = true;
-                else
+                else if (photonView.IsMine)
                     photonView.RPC("Kill", RpcTarget.All);
             }
         }
 
         if (throwTimer > 0 && throwTimer - Time.fixedDeltaTime <= 0) {
-            Physics2D.IgnoreCollision(hitbox, previousHolder.hitboxes[0], false);
+            Physics2D.IgnoreCollision(hitbox, previousHolder.MainHitbox, false);
         }
         Utils.TickTimer(ref throwTimer, 0, Time.fixedDeltaTime);
 
@@ -283,7 +279,7 @@ public class FrozenCube : HoldableEntity {
     [PunRPC]
     public override void Pickup(int view) {
         base.Pickup(view);
-        Physics2D.IgnoreCollision(hitbox, holder.hitboxes[0]);
+        Physics2D.IgnoreCollision(hitbox, holder.MainHitbox);
     }
 
     [PunRPC]

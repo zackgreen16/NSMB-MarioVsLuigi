@@ -29,10 +29,13 @@ public class PlayerListHandler : MonoBehaviour, IInRoomCallbacks {
             UpdateAllPlayerEntries();
         }
     }
-    public void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps) { 
-        UpdatePlayerEntry(targetPlayer); 
+    public void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps) {
+        if (changedProps.ContainsKey(Enums.NetPlayerProperties.Spectator))
+            UpdateAllPlayerEntries();
+        else
+            UpdatePlayerEntry(targetPlayer);
     }
-    
+
     //Register callbacks
     public void OnEnable() {
         PhotonNetwork.AddCallbackTarget(this);
@@ -75,7 +78,7 @@ public class PlayerListHandler : MonoBehaviour, IInRoomCallbacks {
         playerListEntries.Values.ToList().ForEach(entry => Destroy(entry.gameObject));
         playerListEntries.Clear();
     }
-    
+
     public void RemovePlayerEntry(Player player) {
         string id = player.UserId;
         if (!playerListEntries.ContainsKey(id))
@@ -109,5 +112,4 @@ public class PlayerListHandler : MonoBehaviour, IInRoomCallbacks {
             playerListEntries[id].transform.SetAsFirstSibling();
         }
     }
-
 }

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Tilemaps;
 using Photon.Pun;
+using NSMB.Utils;
 
 public class BlockBump : MonoBehaviour {
     public string resultTile = "";
@@ -44,7 +45,7 @@ public class BlockBump : MonoBehaviour {
         if (!PhotonNetwork.IsMasterClient || prefab == null || prefab == "" || prefab == "Coin")
             return;
 
-        Vector3 pos = transform.position + Vector3.up * (fromAbove ? -0.5f : 0.25f);
+        Vector3 pos = transform.position + Vector3.up * (fromAbove ? -0.7f : 0.25f);
         PhotonNetwork.InstantiateRoomObject("Prefabs/Powerup/" + prefab, pos + (Vector3) spawnOffset, Quaternion.identity);
     }
 }

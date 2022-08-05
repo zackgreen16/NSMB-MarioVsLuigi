@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
 using Photon.Pun;
 using UnityEngine.Tilemaps;
+using NSMB.Utils;
 
 public class KoopaWalk : HoldableEntity {
-
-    private static int GROUND_LAYER_ID = -1, GROUND_AND_SEMISOLIDS_LAYER_ID = -1;
 
     protected int combo;
     public float walkSpeed, kickSpeed, wakeup = 15;
@@ -22,11 +21,6 @@ public class KoopaWalk : HoldableEntity {
         base.Start();
         hitbox = transform.GetChild(0).GetComponent<BoxCollider2D>();
         worldHitbox = GetComponent<BoxCollider2D>();
-
-        if (GROUND_LAYER_ID == -1)
-            GROUND_LAYER_ID = LayerMask.NameToLayer("Ground");
-        if (GROUND_AND_SEMISOLIDS_LAYER_ID == -1)
-            GROUND_AND_SEMISOLIDS_LAYER_ID = LayerMask.GetMask("Ground", "Semisolids");
 
         body.velocity = new Vector2(-walkSpeed, 0);
     }
@@ -93,12 +87,12 @@ public class KoopaWalk : HoldableEntity {
             }
         }
 
-        if (physics.onGround && Physics2D.Raycast(body.position, Vector2.down, 0.5f, GROUND_AND_SEMISOLIDS_LAYER_ID) && red && !shell) {
+        if (physics.onGround && Physics2D.Raycast(body.position, Vector2.down, 0.5f, Layers.MaskAnyGround) && red && !shell) {
             Vector3 redCheckPos = body.position + new Vector2(0.1f * (left ? -1 : 1), 0);
             if (GameManager.Instance)
                 Utils.WrapWorldLocation(ref redCheckPos);
 
-            if (!Physics2D.Raycast(redCheckPos, Vector2.down, 0.5f, GROUND_AND_SEMISOLIDS_LAYER_ID)) {
+            if (!Physics2D.Raycast(redCheckPos, Vector2.down, 0.5f, Layers.MaskAnyGround)) {
                 if (photonView && photonView.IsMine) {
                     photonView.RPC("Turnaround", RpcTarget.All, left, velocityLastFrame.x);
                 } else {
@@ -137,7 +131,7 @@ public class KoopaWalk : HoldableEntity {
         } else if (player.sliding || player.inShell || player.invincible > 0 || player.state == Enums.PowerupState.MegaMushroom || player.drill) {
             bool originalFacing = player.facingRight;
             if (shell && !stationary && player.inShell && Mathf.Sign(body.velocity.x) != Mathf.Sign(player.body.velocity.x))
-                player.photonView.RPC("Knockback", RpcTarget.All, player.body.position.x < body.position.x, 0, photonView.ViewID);
+                player.photonView.RPC("Knockback", RpcTarget.All, player.body.position.x < body.position.x, 0, true, photonView.ViewID);
             photonView.RPC("SpecialKill", RpcTarget.All, !originalFacing, false, 0);
         } else if (player.groundpound && player.state != Enums.PowerupState.MiniMushroom && attackedFromAbove) {
             photonView.RPC("EnterShell", RpcTarget.All);
@@ -258,7 +252,7 @@ public class KoopaWalk : HoldableEntity {
                 break;
             killa.photonView.RPC("SpecialKill", RpcTarget.All, killa.body.position.x > body.position.x, false, combo++);
             if (holder)
-                photonView.RPC("SpecialKill", RpcTarget.All, killa.body.position.x < body.position.x, false);
+                photonView.RPC("SpecialKill", RpcTarget.All, killa.body.position.x < body.position.x, false, combo++);
             break;
         case "piranhaplant":
             if (killa.dead)
@@ -291,7 +285,7 @@ public class KoopaWalk : HoldableEntity {
         for (int i = 0; i < collisionAmount; i++) {
             var point = collisions[i];
             Vector2 p = point.point + (point.normal * -0.15f);
-            if (Mathf.Abs(point.normal.x) == 1 && point.collider.gameObject.layer == GROUND_LAYER_ID) {
+            if (Mathf.Abs(point.normal.x) == 1 && point.collider.gameObject.layer == Layers.LayerGround) {
                 if (!putdown && shell && !stationary) {
                     Vector3Int tileLoc = Utils.WorldToTilemapPosition(p + blockOffset);
                     TileBase tile = GameManager.Instance.tilemap.GetTile(tileLoc);

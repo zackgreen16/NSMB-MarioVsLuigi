@@ -1,7 +1,8 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using Photon.Pun;
 using UnityEngine.Rendering.Universal;
+using Photon.Pun;
+using NSMB.Utils;
 
 public class DebugControls : MonoBehaviour {
 

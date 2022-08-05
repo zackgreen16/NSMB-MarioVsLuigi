@@ -116,7 +116,6 @@ MonoBehaviour:
   bouncePower: 0
   terminalVelocity: 8
   blinkingRate: 6
-  passthrough: 1
   avoidPlayers: 0
   followMe: {fileID: 0}
   followMeCounter: 0
@@ -289,7 +288,7 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: -7894537434146019362}
-  sceneViewId: 1
+  sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
 --- !u!114 &-7894537434146019362

@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using Photon.Pun;
 using Photon.Realtime;
 using ExitGames.Client.Photon;
+using NSMB.Utils;
 
 public class GlobalController : Singleton<GlobalController> {
 
@@ -17,7 +18,7 @@ public class GlobalController : Singleton<GlobalController> {
     public DiscordController discordController;
     public string controlsJson = null;
 
-    public bool joinedAsSpectator = false;
+    public bool joinedAsSpectator = false, checkedForVersion;
     public DisconnectCause? disconnectCause = null;
 
     private int windowWidth, windowHeight;

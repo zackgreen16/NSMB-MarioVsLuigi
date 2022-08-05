@@ -12,12 +12,13 @@ using Photon.Realtime;
 using ExitGames.Client.Photon;
 using TMPro;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
+using NSMB.Utils;
 
 public class GameManager : MonoBehaviour, IOnEventCallback, IInRoomCallbacks, IConnectionCallbacks, IMatchmakingCallbacks {
     private static GameManager _instance;
     public static GameManager Instance {
         get {
-            if (_instance == null && SceneManager.GetActiveScene().buildIndex > 2)
+            if (!_instance && SceneManager.GetActiveScene().buildIndex >= 2)
                 _instance = FindObjectOfType<GameManager>();
 
             return _instance;
@@ -67,7 +68,6 @@ public class GameManager : MonoBehaviour, IOnEventCallback, IInRoomCallbacks, IC
     public EnemySpawnpoint[] enemySpawnpoints;
 
     private GameObject[] coins;
-    private readonly Dictionary<Player, List<double>> powerupSummons = new();
     public SpectationManager SpectationManager { get; private set; }
 
     ParticleSystem brickBreak;
@@ -255,6 +255,36 @@ public class GameManager : MonoBehaviour, IOnEventCallback, IInRoomCallbacks, IC
             particle.transform.position += new Vector3(sr.size.x / 4f, size.y / 4f * (upsideDown ? -1 : 1));
             break;
         }
+        case (byte) Enums.NetEventIds.PlayerDamagePlayer: {
+            PhotonView attacker = PhotonView.Find((int) data[0]);
+            PhotonView target = PhotonView.Find((int) data[1]);
+
+            if (!attacker || !target)
+                return;
+
+            PlayerController attackerPlayer = attacker.GetComponent<PlayerController>();
+            PlayerController targetPlayer = target.GetComponent<PlayerController>();
+
+            if (!targetPlayer || !attackerPlayer)
+                return;
+
+            //attacker must be invincible or mega, and near the player
+            if (Utils.WrappedDistance(targetPlayer.body.position, attackerPlayer.body.position) > 2)
+                return;
+
+            if (targetPlayer.invincible > 0 || targetPlayer.hitInvincibilityCounter > 0)
+                return;
+
+            if (!((attackerPlayer.state == Enums.PowerupState.BlueShell && attackerPlayer.inShell) ||
+                attackerPlayer.invincible > 0 ||
+                (attackerPlayer.state == Enums.PowerupState.MegaMushroom && attackerPlayer.giantTimer > 0) ||
+                (attackerPlayer.groundpound && targetPlayer.state == Enums.PowerupState.MiniMushroom)))
+
+                return;
+
+            targetPlayer.photonView.RPC("Powerdown", RpcTarget.All, false);
+            break;
+        }
         }
     }
 
@@ -365,8 +395,6 @@ public class GameManager : MonoBehaviour, IOnEventCallback, IInRoomCallbacks, IC
         coins = GameObject.FindGameObjectsWithTag("coin");
         levelUIColor.a = .7f;
 
-        //StartCoroutine(DataLog());
-
         InputSystem.controls.LoadBindingOverridesFromJson(GlobalController.Instance.controlsJson);
 
         //Spawning in editor??
@@ -440,7 +468,8 @@ public class GameManager : MonoBehaviour, IOnEventCallback, IInRoomCallbacks, IC
 
         if (!spectating) {
             foreach (PlayerController controllers in allPlayers)
-                controllers.gameObject.SetActive(false);
+                if (controllers)
+                    controllers.gameObject.SetActive(false);
 
             yield return new WaitForSeconds(3.5f);
 
@@ -488,7 +517,7 @@ public class GameManager : MonoBehaviour, IOnEventCallback, IInRoomCallbacks, IC
         music.Stop();
         music.Stop();
         GameObject text = GameObject.FindWithTag("wintext");
-        text.GetComponent<TMP_Text>().text = winner != null ? $"{ winner.NickName } Wins!" : "It's a draw!";
+        text.GetComponent<TMP_Text>().text = winner != null ? $"{ winner.NickName } Wins!" : "It's a draw...";
 
         yield return new WaitForSecondsRealtime(1);
         text.GetComponent<Animator>().SetTrigger("start");
@@ -498,10 +527,14 @@ public class GameManager : MonoBehaviour, IOnEventCallback, IInRoomCallbacks, IC
         mixer.SetFloat("MusicPitch", 1f);
 
         bool win = winner != null && winner.IsLocal;
-        music.PlayOneShot((win ? Enums.Sounds.UI_Match_Win : Enums.Sounds.UI_Match_Lose).GetClip());
+        bool draw = winner == null;
+        var secs = 0;
+        secs = (draw ? 5 : 4);
+        if (!draw) music.PlayOneShot((win ? Enums.Sounds.UI_Match_Win : Enums.Sounds.UI_Match_Lose).GetClip());
+        else music.PlayOneShot((Enums.Sounds.UI_Match_Draw).GetClip());
         //TOOD: make a results screen?
 
-        yield return new WaitForSecondsRealtime(4);
+        yield return new WaitForSecondsRealtime(secs);
         if (PhotonNetwork.IsMasterClient)
             PhotonNetwork.DestroyAll();
         SceneManager.LoadScene("MainMenu");
@@ -545,7 +578,13 @@ public class GameManager : MonoBehaviour, IOnEventCallback, IInRoomCallbacks, IC
             HandleMusic();
 
         if (PhotonNetwork.IsMasterClient) {
-            int players = PhotonNetwork.CurrentRoom.PlayerCount;
+            int players = 0;
+            foreach (var player in PhotonNetwork.CurrentRoom.Players) {
+                Utils.GetCustomProperty(Enums.NetPlayerProperties.Spectator, out bool spectating, player.Value.CustomProperties);
+                if (!spectating)
+                    players++;
+            }
+
             if (!loaded && loadedPlayers.Count >= players) {
                 RaiseEventOptions options = new() { CachingOption = EventCaching.AddToRoomCacheGlobal, Receivers = ReceiverGroup.All };
                 SendAndExecuteEvent(Enums.NetEventIds.AllFinishedLoading, PhotonNetwork.ServerTimestamp + ((players-1) * 250) + 1000, SendOptions.SendReliable, options);
@@ -626,15 +665,13 @@ public class GameManager : MonoBehaviour, IOnEventCallback, IInRoomCallbacks, IC
         }
         //TIMED CHECKS
         if (timeUp) {
-            bool draw = false;
-            Utils.GetCustomProperty(Enums.NetRoomProperties.DrawTime, out draw);
-            //time up! check who has most stars, if a tie keep playing
-            if (!draw) 
-                    PhotonNetwork.RaiseEvent((byte) Enums.NetEventIds.EndGame, winningPlayers[0].photonView.Owner, NetworkUtils.EventAll, SendOptions.SendReliable);
-            else {
-                if (winningPlayers.Count == 1)
-                    PhotonNetwork.RaiseEvent((byte) Enums.NetEventIds.EndGame, null, NetworkUtils.EventAll, SendOptions.SendReliable);
-            }
+            Utils.GetCustomProperty(Enums.NetRoomProperties.DrawTime, out bool draw);
+            //time up! check who has most stars, if a tie keep playing, if draw is on end game in a draw
+            if (draw)
+                // it's a draw! Thanks for playing the demo!
+                PhotonNetwork.RaiseEvent((byte) Enums.NetEventIds.EndGame, null, NetworkUtils.EventAll, SendOptions.SendReliable);
+            else if (winningPlayers.Count == 1)
+                PhotonNetwork.RaiseEvent((byte) Enums.NetEventIds.EndGame, winningPlayers[0].photonView.Owner, NetworkUtils.EventAll, SendOptions.SendReliable);
 
             return;
         }
@@ -659,6 +696,14 @@ public class GameManager : MonoBehaviour, IOnEventCallback, IInRoomCallbacks, IC
         bool mega = false;
         bool speedup = false;
 
+        List<PlayerController> alivePlayers = new();
+        foreach (var player in allPlayers) {
+            if (player == null || player.lives == 0)
+                continue;
+
+            alivePlayers.Add(player);
+        }
+
         foreach (var player in allPlayers) {
             if (!player)
                 continue;
@@ -668,6 +713,8 @@ public class GameManager : MonoBehaviour, IOnEventCallback, IInRoomCallbacks, IC
             if (player.invincible > 0)
                 invincible = true;
             if ((player.stars + 1f) / starRequirement >= 0.95f || hurryup != false)
+                speedup = true;
+            if (player.lives == 1 && alivePlayers.Count <= 2)
                 speedup = true;
         }
 

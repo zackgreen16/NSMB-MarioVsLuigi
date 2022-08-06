@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
+
 using Photon.Pun;
 
 public abstract class InteractableTile : AnimatedTile {
@@ -9,23 +10,26 @@ public abstract class InteractableTile : AnimatedTile {
     public abstract bool Interact(MonoBehaviour interacter, InteractionDirection direction, Vector3 worldLocation);
     public static void Bump(MonoBehaviour interacter, InteractionDirection direction, Vector3 worldLocation) {
 
-        if (direction == InteractionDirection.Down)
-            return;
+        //if (direction == InteractionDirection.Down)
+        //    return;
 
         //check for entities above to bump
         foreach (Collider2D collider in Physics2D.OverlapBoxAll(worldLocation + bumpOffset, bumpSize, 0f)) {
             GameObject obj = collider.gameObject;
             if (obj == interacter.gameObject)
                 continue;
+
+            if (obj.GetComponent<MovingPowerup>() is MovingPowerup powerup) {
+                powerup.photonView.RPC("Bump", RpcTarget.All);
+                continue;
+            }
+
             switch (obj.tag) {
             case "Player": {
                 PlayerController player = obj.GetComponent<PlayerController>();
 
-                /*
-                // fall on ass when bumped from below
-                if (player.state == Enums.PowerupState.MegaMushroom)
-                    player.photonView.RPC("KnockbackMegaMushroom", RpcTarget.All);
-                */
+                if (player.gameObject == interacter.gameObject)
+                    continue;
 
                 player.photonView.RPC("Knockback", RpcTarget.All, obj.transform.position.x < interacter.transform.position.x, 1, false, (interacter as MonoBehaviourPun)?.photonView.ViewID ?? -1);
                 continue;
@@ -48,7 +52,7 @@ public abstract class InteractableTile : AnimatedTile {
                     continue;
 
                 if (interacter is PlayerController pl)
-                    pl.photonView.RPC("CollectCoin", RpcTarget.All, obj.GetComponentInParent<PhotonView>().ViewID, obj.transform.position);
+                    pl.photonView.RPC("AttemptCollectCoin", RpcTarget.All, obj.GetComponentInParent<PhotonView>().ViewID, (Vector2) obj.transform.position);
                 continue;
             }
             case "MainStar":

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering.Universal;
+
 using Photon.Pun;
 using NSMB.Utils;
 
@@ -8,6 +9,9 @@ public class DebugControls : MonoBehaviour {
 
     public bool editMode;
     public ScriptableRendererFeature feature;
+
+#if UNITY_EDITOR
+
     public void Start() {
         if (!Debug.isDebugBuild && !Application.isEditor) {
             enabled = false;
@@ -107,4 +111,6 @@ public class DebugControls : MonoBehaviour {
         if (Keyboard.current[key].wasPressedThisFrame)
             PhotonNetwork.Instantiate("Prefabs/Enemy/" + entity, GameManager.Instance.localPlayer.transform.position + (GameManager.Instance.localPlayer.GetComponent<PlayerController>().facingRight ? Vector3.right : Vector3.left) + new Vector3(0, 0.2f, 0), Quaternion.identity);
     }
+
+#endif
 }

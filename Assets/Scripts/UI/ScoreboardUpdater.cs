@@ -1,3 +1,4 @@
+using NSMB.Utils;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -8,7 +9,7 @@ public class ScoreboardUpdater : MonoBehaviour {
     private static IComparer<ScoreboardEntry> entryComparer;
 
     [SerializeField] GameObject entryTemplate;
-    
+
     private readonly List<ScoreboardEntry> entries = new();
     private bool manuallyToggled = false, autoToggled = false;
     private Animator animator;
@@ -21,6 +22,16 @@ public class ScoreboardUpdater : MonoBehaviour {
     }
 
     private void OnToggle(InputAction.CallbackContext context) {
+        ManualToggle();
+    }
+
+    public void SetEnabled() {
+        manuallyToggled = true;
+        animator.SetFloat("speed", 1);
+        animator.Play("toggle", 0, 0.99f);
+    }
+
+    public void ManualToggle() {
         if (autoToggled && !manuallyToggled) {
             //exception, already open. close.
             manuallyToggled = false;
@@ -30,7 +41,7 @@ public class ScoreboardUpdater : MonoBehaviour {
         }
         PlayAnimation(manuallyToggled);
     }
-    
+
     private void PlayAnimation(bool enabled) {
         animator.SetFloat("speed", enabled ? 1 : -1);
         animator.Play("toggle", 0, Mathf.Clamp01(animator.GetCurrentAnimatorStateInfo(0).normalizedTime));
@@ -64,6 +75,9 @@ public class ScoreboardUpdater : MonoBehaviour {
 
     public void Populate(IEnumerable<PlayerController> players) {
         foreach (PlayerController player in players) {
+            if (!player)
+                continue;
+
             GameObject entryObj = Instantiate(entryTemplate, transform);
             entryObj.SetActive(true);
             entryObj.name = player.photonView.Owner.NickName;

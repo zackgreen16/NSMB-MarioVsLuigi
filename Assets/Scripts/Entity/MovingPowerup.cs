@@ -20,6 +20,8 @@ public class MovingPowerup : MonoBehaviourPun {
 
     public Powerup powerupScriptable;
 
+    public bool Collected { get; set; }
+
     public void Awake() {
         body = GetComponent<Rigidbody2D>();
         sRenderer = GetComponentInChildren<SpriteRenderer>();
@@ -54,7 +56,7 @@ public class MovingPowerup : MonoBehaviourPun {
 
     }
 
-    void LateUpdate() {
+    public void LateUpdate() {
         ignoreCounter -= Time.deltaTime;
         if (!followMe)
             return;
@@ -72,7 +74,7 @@ public class MovingPowerup : MonoBehaviourPun {
         }
     }
 
-    void FixedUpdate() {
+    public void FixedUpdate() {
         if (GameManager.Instance && GameManager.Instance.gameover) {
             body.velocity = Vector2.zero;
             body.isKinematic = true;
@@ -128,16 +130,27 @@ public class MovingPowerup : MonoBehaviourPun {
                 right = (closestPosition.x - body.position.x) < 0;
         }
 
-        body.velocity = new Vector2(body.velocity.x, Mathf.Max(-terminalVelocity, body.velocity.y));
+        if (body.velocity.y < -terminalVelocity)
+            body.velocity = new Vector2(body.velocity.x, Mathf.Max(-terminalVelocity, body.velocity.y));
     }
-    void HandleCollision() {
+
+    [PunRPC]
+    public void Bump() {
+        if (followMe)
+            return;
+
+        body.velocity = new(body.velocity.x, 5f);
+    }
+
+    public void HandleCollision() {
         physics.UpdateCollisions();
         if (physics.hitLeft || physics.hitRight) {
             right = physics.hitLeft;
-            body.velocity = new Vector2(speed * (right ? 1 : -1), body.velocity.y);
+            body.velocity = new(speed * (right ? 1 : -1), body.velocity.y);
         }
         if (physics.onGround) {
-            body.velocity = new Vector2(speed * (right ? 1 : -1), bouncePower);
+            body.velocity = new(speed * (right ? 1 : -1), Mathf.Max(body.velocity.y, bouncePower));
+
             if ((physics.hitRoof || (physics.hitLeft && physics.hitRight)) && photonView.IsMine) {
                 photonView.RPC("DespawnWithPoof", RpcTarget.All);
                 return;

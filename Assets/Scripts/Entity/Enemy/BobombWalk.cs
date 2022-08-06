@@ -1,23 +1,27 @@
 ﻿using UnityEngine;
 using UnityEngine.Tilemaps;
+
 using Photon.Pun;
 using NSMB.Utils;
 
 public class BobombWalk : HoldableEntity {
 
-    private readonly int explosionTileSize = 2;
-    public float walkSpeed, kickSpeed, detonateTimer;
-    public bool lit, detonated;
-    float detonateCount;
-    public GameObject explosion;
+    [SerializeField] private GameObject explosionPrefab;
+    [SerializeField] private float walkSpeed = 0.6f, kickSpeed = 5f, detonationTime = 4f;
+    [SerializeField] private int explosionTileSize = 2;
 
-    new void Start() {
+    public bool lit, detonated;
+
+    private float detonateCount;
+
+    #region Unity Methods
+    public override void Start() {
         base.Start();
-        body.velocity = new Vector2(walkSpeed * (left ? -1 : 1), body.velocity.y);
-        physics = GetComponent<PhysicsEntity>();
+
+        body.velocity = new(walkSpeed * (left ? -1 : 1), body.velocity.y);
     }
 
-    new void FixedUpdate() {
+    public override void FixedUpdate() {
         if (GameManager.Instance && GameManager.Instance.gameover) {
             body.velocity = Vector2.zero;
             body.angularVelocity = 0;
@@ -52,101 +56,17 @@ public class BobombWalk : HoldableEntity {
             sRenderer.SetPropertyBlock(block);
         }
     }
-    [PunRPC]
-    public void Detonate() {
+    #endregion
 
-        sRenderer.enabled = false;
-        hitbox.enabled = false;
-        detonated = true;
-
-        Instantiate(explosion, transform.position, Quaternion.identity);
-
-        if (!photonView.IsMine)
-            return;
-
-        RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position + new Vector3(0,0.5f), 1.2f, Vector2.zero);
-        foreach (RaycastHit2D hit in hits) {
-            GameObject obj = hit.collider.gameObject;
-            switch (hit.collider.tag) {
-            case "Player": {
-                obj.GetPhotonView().RPC("Powerdown", RpcTarget.All, false);
-                break;
-            }
-            case "goomba":
-            case "koopa":
-            case "bulletbill":
-            case "bobomb": {
-                if (obj == gameObject || obj == gameObject.transform.Find("Hitbox").gameObject)
-                    continue;
-                obj.GetComponentInParent<PhotonView>().RPC("SpecialKill", RpcTarget.All, transform.position.x < obj.transform.position.x, false, 0);
-                break;
-            }
-            }
-        }
-
-        Vector3Int tileLocation = Utils.WorldToTilemapPosition(body.position);
-        Tilemap tm = GameManager.Instance.tilemap;
-        for (int x = -explosionTileSize; x <= explosionTileSize; x++) {
-            for (int y = -explosionTileSize; y <= explosionTileSize; y++) {
-                if (Mathf.Abs(x) + Mathf.Abs(y) > explosionTileSize) continue;
-                Vector3Int ourLocation = tileLocation + new Vector3Int(x, y, 0);
-                Utils.WrapTileLocation(ref ourLocation);
-
-                TileBase tile = tm.GetTile(ourLocation);
-                if (tile is InteractableTile iTile) {
-                    iTile.Interact(this, InteractableTile.InteractionDirection.Up, Utils.TilemapToWorldPosition(ourLocation));
-                }
-            }
-        }
-        PhotonNetwork.Destroy(gameObject);
-    }
-
-    [PunRPC]
-    public override void Kill() {
-        Light();
-    }
-    [PunRPC]
-    public void Light() {
-        animator.SetTrigger("lit");
-        detonateCount = detonateTimer;
-        body.velocity = Vector2.zero;
-        lit = true;
-        PlaySound(Enums.Sounds.Enemy_Bobomb_Fuse);
-    }
-    [PunRPC]
-    public override void Throw(bool facingLeft, bool crouch) {
-        if (!holder)
-            return;
-        if (Utils.IsTileSolidAtWorldLocation(body.position)) {
-            transform.position = body.position = new Vector2(holder.transform.position.x, transform.position.y);
-        }
-        holder = null;
-        photonView.TransferOwnership(PhotonNetwork.MasterClient);
-        left = facingLeft;
-        sRenderer.flipX = left;
-        if (crouch) {
-            body.velocity = new Vector2(2f * (facingLeft ? -1 : 1), body.velocity.y);
-        } else {
-            body.velocity = new Vector2(kickSpeed * (facingLeft ? -1 : 1), body.velocity.y);
-        }
-    }
-
-    [PunRPC]
-    public override void Kick(bool fromLeft, float speed, bool groundpound) {
-        left = !fromLeft;
-        sRenderer.flipX = left;
-        body.velocity = new Vector2(kickSpeed * (left ? -1 : 1), 2f);
-        photonView.RPC("PlaySound", RpcTarget.All, Enums.Sounds.Enemy_Shell_Kick);
-    }
-
+    #region Helper Methods
     public override void InteractWithPlayer(PlayerController player) {
         Vector2 damageDirection = (player.body.position - body.position).normalized;
         bool attackedFromAbove = Vector2.Dot(damageDirection, Vector2.up) > 0.5f;
 
         if (!attackedFromAbove && player.state == Enums.PowerupState.BlueShell && player.crouching && !player.inShell) {
             photonView.RPC("SetLeft", RpcTarget.All, damageDirection.x > 0);
-        } else if(player.sliding || player.inShell || player.invincible > 0) {
-            photonView.RPC("SpecialKill", RpcTarget.All, player.body.velocity.x > 0, false, 0);
+        } else if (player.sliding || player.inShell || player.invincible > 0) {
+            photonView.RPC("SpecialKill", RpcTarget.All, player.body.velocity.x > 0, false, player.StarCombo++);
             return;
         } else if (attackedFromAbove && !lit) {
             if (player.state != Enums.PowerupState.MiniMushroom || (player.groundpound && attackedFromAbove))
@@ -175,7 +95,7 @@ public class BobombWalk : HoldableEntity {
         }
     }
 
-    void HandleCollision() {
+    private void HandleCollision() {
         if (holder)
             return;
 
@@ -187,9 +107,9 @@ public class BobombWalk : HoldableEntity {
             }
         }
 
-        if (photonView && !photonView.IsMine) {
+        if (!photonView.IsMineOrLocal())
             return;
-        }
+
         if (physics.hitRight && !left) {
             if (photonView) {
                 photonView.RPC("Turnaround", RpcTarget.All, false);
@@ -205,13 +125,108 @@ public class BobombWalk : HoldableEntity {
         }
 
         if (physics.onGround && physics.hitRoof)
-            photonView.RPC("Detonate", RpcTarget.All);
+            photonView.RPC("SpecialKill", RpcTarget.All);
     }
+    #endregion
+
+    #region PunRPCs
     [PunRPC]
-    void Turnaround(bool hitWallOnLeft) {
+    public void Detonate() {
+
+        sRenderer.enabled = false;
+        hitbox.enabled = false;
+        detonated = true;
+
+        Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+
+        if (!photonView.IsMine)
+            return;
+
+        RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position + new Vector3(0,0.5f), 1.2f, Vector2.zero);
+        foreach (RaycastHit2D hit in hits) {
+            GameObject obj = hit.collider.gameObject;
+
+            if (obj == gameObject)
+                continue;
+
+            if (obj.GetComponent<KillableEntity>() is KillableEntity en) {
+                en.photonView.RPC("SpecialKill", RpcTarget.All, transform.position.x < obj.transform.position.x, false, 0);
+                continue;
+            }
+
+            switch (hit.collider.tag) {
+            case "Player": {
+                obj.GetPhotonView().RPC("Powerdown", RpcTarget.All, false);
+                break;
+            }
+            }
+        }
+
+        Vector3Int tileLocation = Utils.WorldToTilemapPosition(body.position);
+        Tilemap tm = GameManager.Instance.tilemap;
+        for (int x = -explosionTileSize; x <= explosionTileSize; x++) {
+            for (int y = -explosionTileSize; y <= explosionTileSize; y++) {
+                if (Mathf.Abs(x) + Mathf.Abs(y) > explosionTileSize) continue;
+                Vector3Int ourLocation = tileLocation + new Vector3Int(x, y, 0);
+                Utils.WrapTileLocation(ref ourLocation);
+
+                TileBase tile = tm.GetTile(ourLocation);
+                if (tile is InteractableTile iTile) {
+                    iTile.Interact(this, InteractableTile.InteractionDirection.Up, Utils.TilemapToWorldPosition(ourLocation));
+                }
+            }
+        }
+        PhotonNetwork.Destroy(gameObject);
+    }
+
+    [PunRPC]
+    public override void Kill() {
+        Light();
+    }
+
+    [PunRPC]
+    public void Light() {
+        animator.SetTrigger("lit");
+        detonateCount = detonationTime;
+        body.velocity = Vector2.zero;
+        lit = true;
+        PlaySound(Enums.Sounds.Enemy_Bobomb_Fuse);
+    }
+
+    [PunRPC]
+    public override void Throw(bool facingLeft, bool crouch, Vector2 pos) {
+        if (!holder)
+            return;
+
+        body.position = pos;
+        if (Utils.IsTileSolidAtWorldLocation(body.position))
+            transform.position = body.position = new(holder.transform.position.x, transform.position.y);
+
+        holder = null;
+        photonView.TransferOwnership(PhotonNetwork.MasterClient);
+        left = facingLeft;
+        sRenderer.flipX = left;
+        if (crouch) {
+            body.velocity = new Vector2(2f * (facingLeft ? -1 : 1), body.velocity.y);
+        } else {
+            body.velocity = new Vector2(kickSpeed * (facingLeft ? -1 : 1), body.velocity.y);
+        }
+    }
+
+    [PunRPC]
+    public override void Kick(bool fromLeft, float speed, bool groundpound) {
+        left = !fromLeft;
+        sRenderer.flipX = left;
+        body.velocity = new(kickSpeed * (left ? -1 : 1), 4f);
+        PlaySound(Enums.Sounds.Enemy_Shell_Kick);
+    }
+
+    [PunRPC]
+    public void Turnaround(bool hitWallOnLeft) {
         left = !hitWallOnLeft;
         sRenderer.flipX = left;
-        body.velocity = new Vector2(walkSpeed * (left ? -1 : 1), body.velocity.y);
+        body.velocity = new(walkSpeed * (left ? -1 : 1), body.velocity.y);
         animator.SetTrigger("turnaround");
     }
+    #endregion
 }

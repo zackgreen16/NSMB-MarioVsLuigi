@@ -131,6 +131,8 @@ public static class Enums {
         [SoundData("ui/windowclosed")]                          UI_WindowClose = 85,
         [SoundData("ui/windowopen")]                            UI_WindowOpen = 86,
         [SoundData("ui/match_draw")]                            UI_Match_Draw = 87,
+        [SoundData("ui/countdown1")]                            UI_Countdown_0 = 88,
+        [SoundData("ui/countdown0")]                            UI_Countdown_1 = 89,
 
         //World Elements
         [SoundData("world/block_break")]                        World_Block_Break = 67,
@@ -181,9 +183,10 @@ public static class Enums {
     public enum NetEventIds : byte {
         // 1-9 = in-lobby events
         StartGame = 1,
-        ChatMessage = 2,
-        ChangeMaxPlayers = 3,
-        ChangePrivate = 4,
+        SystemMessage = 2,
+        PlayerChatMessage = 3,
+        ChangeMaxPlayers = 4,
+        ChangePrivate = 5,
         // 10-19 = game state events
         PlayerFinishedLoading = 10,
         AllFinishedLoading = 11,

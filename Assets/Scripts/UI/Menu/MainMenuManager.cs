@@ -248,7 +248,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
     }
     public void OnDisconnected(DisconnectCause cause) {
         Debug.Log("[PHOTON] Disconnected: " + cause.ToString());
-        if (!(cause == DisconnectCause.None || cause == DisconnectCause.DisconnectByClientLogic))
+        if (!(cause == DisconnectCause.None || cause == DisconnectCause.DisconnectByClientLogic || cause == DisconnectCause.CustomAuthenticationFailed))
             OpenErrorBox("Disconnected: " + cause.ToString());
 
         selectedRoom = null;
@@ -260,6 +260,12 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
                 currentRooms.Remove(key);
             }
 
+            if (!GlobalController.Instance.authenticated) {
+                string id = PlayerPrefs.GetString("id", null);
+                string token = PlayerPrefs.GetString("token", null);
+
+                AuthenticationHandler.Authenticate(id, token);
+            }
             PhotonNetwork.ConnectToRegion(lastRegion);
 
             for (int i = 0; i < pingSortedRegions.Length; i++) {
@@ -286,6 +292,8 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
         }, "");
     }
     public void OnCustomAuthenticationResponse(Dictionary<string, object> response) {
+        GlobalController.Instance.authenticated = true;
+
         PlayerPrefs.SetString("id", PhotonNetwork.AuthValues.UserId);
         if (response.ContainsKey("Token"))
             PlayerPrefs.SetString("token", (string) response["Token"]);
@@ -294,6 +302,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
     }
     public void OnCustomAuthenticationFailed(string failure) {
         OpenErrorBox(failure);
+        GlobalController.Instance.authenticated = false;
     }
     public void OnConnectedToMaster() {
         JoinMainLobby();
@@ -452,14 +461,8 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
             string id = PlayerPrefs.GetString("id", null);
             string token = PlayerPrefs.GetString("token", null);
 
-            AuthenticationValues auth = new();
-            auth.AuthType = CustomAuthenticationType.Custom;
-            auth.UserId = id;
-            auth.AddAuthParameter("userid", id);
-            auth.AddAuthParameter("token", token);
-            PhotonNetwork.AuthValues = auth;
+            AuthenticationHandler.Authenticate(id, token);
 
-            PhotonNetwork.NetworkingClient.ConnectToNameServer();
         } else {
             if (PhotonNetwork.InRoom) {
                 EnterRoom();
@@ -1133,12 +1136,13 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
                 "ban" => "/ban <player name> - Ban a player from rejoining the room",
                 "host" => "/host <player name> - Make a player the host for the room",
                 "mute" => "/mute <playername> - Prevents a player from talking in chat",
-                "debug" => "/debug - Enables debug & in-development features",
-                _ => "Available commands: /kick, /host, /debug, /mute, /ban",
+                //"debug" => "/debug - Enables debug & in-development features",
+                _ => "Available commands: /kick, /host, /mute, /ban",
             };
             LocalChatMessage(msg, Color.red);
             return;
         }
+        /*
         case "debug": {
             Utils.GetCustomProperty(Enums.NetRoomProperties.Debug, out bool debugEnabled);
             if (PhotonNetwork.CurrentRoom.IsVisible) {
@@ -1156,6 +1160,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
             });
             return;
         }
+        */
         case "mute": {
             if (args.Length < 2) {
                 LocalChatMessage("Usage: /mute <player name>", Color.red);

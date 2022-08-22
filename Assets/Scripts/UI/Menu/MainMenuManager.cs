@@ -90,7 +90,6 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
         List<string> invalidRooms = new();
 
         foreach (RoomInfo room in roomList) {
-            Utils.GetCustomProperty(Enums.NetRoomProperties.HostName, out string host, room.CustomProperties);
             Utils.GetCustomProperty(Enums.NetRoomProperties.Lives, out int lives, room.CustomProperties);
             Utils.GetCustomProperty(Enums.NetRoomProperties.StarRequirement, out int stars, room.CustomProperties);
             Utils.GetCustomProperty(Enums.NetRoomProperties.CoinRequirement, out int coins, room.CustomProperties);
@@ -173,6 +172,9 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
         EnterRoom();
     }
     IEnumerator KickPlayer(Player player) {
+        if (player.IsMasterClient)
+            yield break;
+
         while (PhotonNetwork.CurrentRoom.Players.Values.Contains(player)) {
             PhotonNetwork.CloseConnection(player);
             yield return new WaitForSecondsRealtime(0.5f);
@@ -249,7 +251,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
     public void OnDisconnected(DisconnectCause cause) {
         Debug.Log("[PHOTON] Disconnected: " + cause.ToString());
         if (!(cause == DisconnectCause.None || cause == DisconnectCause.DisconnectByClientLogic || cause == DisconnectCause.CustomAuthenticationFailed))
-            OpenErrorBox("Disconnected: " + cause.ToString());
+            OpenErrorBox(cause);
 
         selectedRoom = null;
         selectedRoomIcon = null;
@@ -260,7 +262,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
                 currentRooms.Remove(key);
             }
 
-            if (!GlobalController.Instance.authenticated) {
+            if (PhotonNetwork.AuthValues.Token == null) {
                 string id = PlayerPrefs.GetString("id", null);
                 string token = PlayerPrefs.GetString("token", null);
 
@@ -285,15 +287,13 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
             System.Array.Sort(pingSortedRegions, NetworkUtils.PingComparer);
 
             foreach (Region r in pingSortedRegions)
-                formattedRegions.Add($"{r.Code} <color=#cccccc>({(r.Ping == 4000 ? "N/A" : r.Ping + "ms")})");
+                formattedRegions.Add($"{r.Code} <color=#bbbbbb>({(r.Ping == 4000 ? "N/A" : r.Ping + "ms")})");
 
             lastRegion = pingSortedRegions[0].Code;
             pingsReceived = true;
         }, "");
     }
     public void OnCustomAuthenticationResponse(Dictionary<string, object> response) {
-        GlobalController.Instance.authenticated = true;
-
         PlayerPrefs.SetString("id", PhotonNetwork.AuthValues.UserId);
         if (response.ContainsKey("Token"))
             PlayerPrefs.SetString("token", (string) response["Token"]);
@@ -302,7 +302,6 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
     }
     public void OnCustomAuthenticationFailed(string failure) {
         OpenErrorBox(failure);
-        GlobalController.Instance.authenticated = false;
     }
     public void OnConnectedToMaster() {
         JoinMainLobby();
@@ -346,12 +345,15 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
             sender = PhotonNetwork.CurrentRoom.GetPlayer(e.Sender);
 
         switch (e.Code) {
-        case EventCode.PropertiesChanged: {
-            if ((int) e.Parameters[253] == 1 && PhotonNetwork.IsMasterClient && sender != null && !sender.IsMasterClient)
-                StartCoroutine(KickPlayer(sender));
+        //case EventCode.PropertiesChanged: {
+        //    if ((int) e.Parameters[253] == 1)
+        //        Debug.Log(e.ToStringFull());
 
-            break;
-        }
+        //    if ((int) e.Parameters[253] == 1 && PhotonNetwork.IsMasterClient && sender != null && !sender.IsMasterClient)
+        //        StartCoroutine(KickPlayer(sender));
+
+        //    break;
+        //}
         case (byte) Enums.NetEventIds.StartGame: {
 
             if (!(sender?.IsMasterClient ?? false) && e.SenderKey != 255)
@@ -441,7 +443,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
         mixer.SetFloat("MusicPitch", 1f);
 
         if (GlobalController.Instance.disconnectCause != null) {
-            OpenErrorBox("Disconnected: " + GlobalController.Instance.disconnectCause.ToString());
+            OpenErrorBox(GlobalController.Instance.disconnectCause.Value);
             GlobalController.Instance.disconnectCause = null;
         }
 
@@ -452,7 +454,8 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
         //Photon stuff.
         if (!PhotonNetwork.IsConnected) {
             OpenTitleScreen();
-            PhotonNetwork.NetworkingClient.AppId = "ce540834-2db9-40b5-a311-e58be39e726a";
+            //PhotonNetwork.NetworkingClient.AppId = "ce540834-2db9-40b5-a311-e58be39e726a";
+            PhotonNetwork.NetworkingClient.AppId = "40c2f241-79f7-4721-bdac-3c0366d00f58";
 
             //version separation
             Match match = Regex.Match(Application.version, "^\\w*\\.\\w*\\.\\w*");
@@ -751,6 +754,16 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
         lobbyJoinField.text = "";
         EventSystem.current.SetSelectedGameObject(privateSelected);
     }
+
+    public void OpenErrorBox(DisconnectCause cause) {
+        if (!errorBox.activeSelf)
+            sfx.PlayOneShot(Enums.Sounds.UI_Error.GetClip());
+
+        errorBox.SetActive(true);
+        errorText.text = NetworkUtils.disconnectMessages.GetValueOrDefault(cause, cause.ToString());
+        EventSystem.current.SetSelectedGameObject(errorButton);
+    }
+
     public void OpenErrorBox(string text) {
         if (!errorBox.activeSelf)
             sfx.PlayOneShot(Enums.Sounds.UI_Error.GetClip());

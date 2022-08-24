@@ -3172,11 +3172,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n<color=yellow>Mod by:</color>\nFlandre and XiYe\n\n<color=yellow>Game
-    by:</color>\nipodtouch0218\n\n<color=yellow>Github Contributors</color>\nGradedWarrior\nTheMoogle\nSkillz\nSkarph\nZest\nkittenchilly\nAmy54Desu\nKraken\nShadowWalker13\nPerez\nmindnomad\n\n<color=yellow>Music</color>\nRENREN\n\n<color=yellow>QA
-    Testing</color>\nTheCyVap\nShadow_Walker13\n\n<color=yellow>Level Design</color>\nSkarph\nTheCyVap\nmindnomad\n\n<color=yellow>Original
-    Game / Resources</color>\nNew Super Mario Bros.\nNew Super Mario Bros. Wii\nSuper
-    Mario Maker 2\n(c) Nintendo\n\n<color=yellow>Asset Rippers</color>\nDemon2Warrior
+  m_text: "\n<color=yellow>MOD\u30AF\u30EA\u30A8\u30FC\u30BF\u30FC:</color>\nFlandre
+    and XiYe\n\n<color=yellow>\u3055\u304F\u305B\u3044\u3057\u3083:</color>\nipodtouch0218\n\n<color=yellow>Github\u306E\u30B3\u30F3\u30C8\u30EA\u30D3\u30E5-\u30BF\u30FC</color>\nGradedWarrior\nTheMoogle\nSkillz\nSkarph\nZest\nkittenchilly\nAmy54Desu\nKraken\nShadowWalker13\nPerez\nmindnomad\n\n<color=yellow>\u304A\u3093\u308A\u3087\u3046</color>\nRENREN\n\n<color=yellow>\u30C6\u30B9\u30C8\u30D7\u30EC\u30A4</color>\nTheCyVap\nShadow_Walker13\n\n<color=yellow>\u30B9\u30C6\u30FC\u30B8\u3055\u304F\u305B\u3044\u3057\u3083</color>\nSkarph\nTheCyVap\nmindnomad\n\n<color=yellow>\u30AA\u30EA\u30B8\u30CA\u30EB\u30B2\u30FC\u30E0/\u30EA\u30BD\u30FC\u30B9</color>\nNew\u30DE\u30EA\u30AADS\nNew\u30DE\u30EA\u30AAWii\n\u30B9\u30FC\u30D1\u30FC\u30DE\u30EA\u30AA\u30E1\u30FC\u30AB\u30FC2\n(c)
+    \u30CB\u30F3\u30C6\u30F3\u30C9\u30FC Nintendo\n\n<color=yellow>\u30A2\u30C3\u30BB\u30C8\u306E\u3059\u3044\u3060\u3057</color>\nDemon2Warrior
     (Background)\r\nVentureSonic (Background)\r\nKeira (Background)\nOhthatguy (Background)\nPoudink
     (Tiles)\r\nSomeone (Tiles)\r\nHiccup (Tiles)\r\nJouv (Tiles)\r\nmindnomad (Tiles/Sound)\n\rSymbolcom
     (Enemies)\r\nMr. C (Enemies)\r\nRagey (Enemies)\r\nTechokami (Enemies)\r\n\rA
@@ -19941,7 +19939,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: aaa's Lobby
+  m_text: "aaa\u306E\u30ED\u30D3\u30FC"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d42c556520644b148ada62f0b573e1a5, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 8615ffc530d32d743ad868fa924bcb71, type: 2}
@@ -89512,9 +89510,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'In-Progress
-
-'
+  m_text: "\u30D7\u30EC\u30A4\u3061\u3085\u3046\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d42c556520644b148ada62f0b573e1a5, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 8615ffc530d32d743ad868fa924bcb71, type: 2}
@@ -96231,7 +96227,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Players: 1/10'
+  m_text: "\u30D7\u30EC\u30A4\u30E4\u30FC: 1/10"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d42c556520644b148ada62f0b573e1a5, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 8615ffc530d32d743ad868fa924bcb71, type: 2}

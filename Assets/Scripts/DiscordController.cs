@@ -82,9 +82,9 @@ public class DiscordController : MonoBehaviour {
             GameManager gm = GameManager.Instance;
             Room room = PhotonNetwork.CurrentRoom;
 
-            activity.Details = PhotonNetwork.OfflineMode ? "Playing Offline" : "Playing Online";
+            activity.Details = PhotonNetwork.OfflineMode ? "オンラインでプレイ中" : "オンラインでプレイ中";
             activity.Party = new() { Size = new() { CurrentSize = room.PlayerCount, MaxSize = room.MaxPlayers }, Id = PhotonNetwork.CurrentRoom.Name };
-            activity.State = room.IsVisible ? "In a Public Game" : "In a Private Game";
+            activity.State = room.IsVisible ? "公共ロビーで" : "プライベートロビーで";
             activity.Secrets = new() { Join = PhotonNetwork.CloudRegion + "-" + room.Name };
 
             ActivityAssets assets = new();
@@ -106,9 +106,9 @@ public class DiscordController : MonoBehaviour {
             //in a room
             Room room = PhotonNetwork.CurrentRoom;
 
-            activity.Details = PhotonNetwork.OfflineMode ? "Playing Offline" : "Playing Online";
+            activity.Details = PhotonNetwork.OfflineMode ? "オフラインでプレイ中" : "オンラインでプレイ中";
             activity.Party = new() { Size = new() { CurrentSize = room.PlayerCount, MaxSize = room.MaxPlayers }, Id = PhotonNetwork.CurrentRoom.Name };
-            activity.State = room.IsVisible ? "In a Public Lobby" : "In a Private Lobby";
+            activity.State = room.IsVisible ? "公共ロビーで" : "プライベートロビーで";
             activity.Secrets = new() { Join = PhotonNetwork.CloudRegion + "-" + room.Name };
 
             activity.Assets = new() { LargeImage = "mainmenu" };
@@ -116,7 +116,7 @@ public class DiscordController : MonoBehaviour {
         } else {
             //in the main menu, not in a room
 
-            activity.Details = "Browsing the Main Menu...";
+            activity.Details = "メインメニューで...";
             activity.Assets = new() { LargeImage = "mainmenu" };
 
         }

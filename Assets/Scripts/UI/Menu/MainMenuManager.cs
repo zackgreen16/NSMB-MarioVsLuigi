@@ -1026,7 +1026,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
 
     public void Promote(Player target) {
         if (target.IsLocal) {
-            LocalChatMessage("You are already the host..?", Color.red);
+            LocalChatMessage("えーっ?!\nあなたはもうホストでは…?", Color.red);
             return;
         }
         PhotonNetwork.SetMasterClient(target);

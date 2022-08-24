@@ -27,9 +27,9 @@ public class RoomIcon : MonoBehaviour {
         room = newRoom;
         ExitGames.Client.Photon.Hashtable prop = room.CustomProperties;
 
-        nameText.text = $"{((string) prop[Enums.NetRoomProperties.HostName]).ToValidUsername()}'s Lobby";
+        nameText.text = $"{((string) prop[Enums.NetRoomProperties.HostName]).ToValidUsername()}のロビー";
         playersText.text = $"Players: {room.PlayerCount}/{room.MaxPlayers}";
-        inProgressText.text = (bool) prop[Enums.NetRoomProperties.GameStarted] ? "In Progress" : "Not Started";
+        inProgressText.text = (bool) prop[Enums.NetRoomProperties.GameStarted] ? "プレイちゅう" : "たいきちゅう";
 
         string symbols = "";
         Utils.GetCustomProperty(Enums.NetRoomProperties.StarRequirement, out int stars, newRoom.CustomProperties);

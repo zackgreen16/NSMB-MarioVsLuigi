@@ -590,7 +590,7 @@ public class GameManager : MonoBehaviour, IOnEventCallback, IInRoomCallbacks, IC
         gameover = true;
         music.Stop();
         GameObject text = GameObject.FindWithTag("wintext");
-        text.GetComponent<TMP_Text>().text = winner != null ? $"{ winner.GetUniqueNickname() } かち!" : "It's a draw...";
+        text.GetComponent<TMP_Text>().text = winner != null ? $"{ winner.GetUniqueNickname() } かち!" : "ひきわけ";
 
         yield return new WaitForSecondsRealtime(1);
         text.GetComponent<Animator>().SetTrigger("start");

@@ -5,7 +5,7 @@ using TMPro;
 using Photon.Pun;
 public class LoadingWaitingOn : MonoBehaviour {
     private TMP_Text text;
-    public string emptyText = "Loading...", iveLoadedText = "Waiting for others...", readyToStartText = "Starting...", spectatorText = "Joining as Spectator...";
+    public string emptyText = "NOW LOADING...", iveLoadedText = "Waiting for others...", readyToStartText = "スタートちゅう...", spectatorText = "Joining as Spectator...";
     void Start() {
         text = GetComponent<TMP_Text>();
     }

@@ -1291,6 +1291,8 @@ public class PlayerController : MonoBehaviourPun, IFreezableEntity, ICustomSeria
         animator.SetBool("knockback", false);
         animator.SetBool("flying", false);
         animator.SetBool("firedeath", fire);
+        if (photonView.IsMine)
+            GameManager.Instance.music.Stop();
         PlaySound(Enums.Sounds.Player_Sound_Death);
         SpawnStars(1, deathplane);
         body.isKinematic = false;
@@ -1378,6 +1380,8 @@ public class PlayerController : MonoBehaviourPun, IFreezableEntity, ICustomSeria
         groundpound = false;
         inShell = false;
         landing = 0f;
+        if (photonView.IsMine)
+            GameManager.Instance.music.Play();
         ResetKnockback();
         Instantiate(Resources.Load("Prefabs/Particle/Puff"), transform.position, Quaternion.identity);
         models.transform.rotation = Quaternion.Euler(0, 180, 0);

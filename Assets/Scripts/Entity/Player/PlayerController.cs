@@ -250,7 +250,7 @@ public class PlayerController : MonoBehaviourPun, IFreezableEntity, ICustomSeria
             InputSystem.controls.プレイヤー.ダッシュ.started += OnSprint;
             InputSystem.controls.プレイヤー.ダッシュ.canceled += OnSprint;
             InputSystem.controls.プレイヤー.パワーアップアクション.performed += OnPowerupAction;
-            InputSystem.controls.プレイヤー.イテムをとりだします.performed += OnReserveItem;
+            InputSystem.controls.プレイヤー.アイテムをとりだす.performed += OnReserveItem;
         }
 
         GameManager.Instance.players.Add(this);
@@ -279,7 +279,7 @@ public class PlayerController : MonoBehaviourPun, IFreezableEntity, ICustomSeria
         InputSystem.controls.プレイヤー.ダッシュ.started -= OnSprint;
         InputSystem.controls.プレイヤー.ダッシュ.canceled -= OnSprint;
         InputSystem.controls.プレイヤー.パワーアップアクション.performed -= OnPowerupAction;
-        InputSystem.controls.プレイヤー.イテムをとりだします.performed -= OnReserveItem;
+        InputSystem.controls.プレイヤー.アイテムをとりだす.performed -= OnReserveItem;
     }
 
     public void OnGameStart() {

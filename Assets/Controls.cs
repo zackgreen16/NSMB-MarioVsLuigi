@@ -64,7 +64,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""イテムをとりだします"",
+                    ""name"": ""アイテムをとりだす"",
                     ""type"": ""Button"",
                     ""id"": ""27ec6a67-2030-438e-ab5f-3e20fddb0588"",
                     ""expectedControlType"": ""Button"",
@@ -301,7 +301,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""キーボード"",
-                    ""action"": ""イテムをとりだします"",
+                    ""action"": ""アイテムをとりだす"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -312,7 +312,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""キーボード"",
-                    ""action"": ""イテムをとりだします"",
+                    ""action"": ""アイテムをとりだす"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -323,7 +323,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""ゲームパッド"",
-                    ""action"": ""イテムをとりだします"",
+                    ""action"": ""アイテムをとりだす"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -334,7 +334,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""ゲームパッド"",
-                    ""action"": ""イテムをとりだします"",
+                    ""action"": ""アイテムをとりだす"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -434,7 +434,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""デバックじょうほう"",
+                    ""name"": ""デバッグじょうほう"",
                     ""type"": ""Button"",
                     ""id"": ""8cc650dc-a45e-4887-b332-7b0fdfdb1106"",
                     ""expectedControlType"": ""Button"",
@@ -879,7 +879,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""キーボード"",
-                    ""action"": ""デバックじょうほう"",
+                    ""action"": ""デバッグじょうほう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -890,7 +890,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""キーボード"",
-                    ""action"": ""デバックじょうほう"",
+                    ""action"": ""デバッグじょうほう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -901,7 +901,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""ゲームパッド"",
-                    ""action"": ""デバックじょうほう"",
+                    ""action"": ""デバッグじょうほう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -912,7 +912,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""ゲームパッド"",
-                    ""action"": ""デバックじょうほう"",
+                    ""action"": ""デバッグじょうほう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -1114,7 +1114,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         m_プレイヤー_ジャンプ = m_プレイヤー.FindAction("ジャンプ", throwIfNotFound: true);
         m_プレイヤー_ダッシュ = m_プレイヤー.FindAction("ダッシュ", throwIfNotFound: true);
         m_プレイヤー_パワーアップアクション = m_プレイヤー.FindAction("パワーアップアクション", throwIfNotFound: true);
-        m_プレイヤー_イテムをとりだします = m_プレイヤー.FindAction("イテムをとりだします", throwIfNotFound: true);
+        m_プレイヤー_アイテムをとりだす = m_プレイヤー.FindAction("アイテムをとりだす", throwIfNotFound: true);
         // インターフェース
         m_インターフェース = asset.FindActionMap("インターフェース", throwIfNotFound: true);
         m_インターフェース_UIのそうさ = m_インターフェース.FindAction("UIのそうさ", throwIfNotFound: true);
@@ -1122,7 +1122,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         m_インターフェース_キャンセル = m_インターフェース.FindAction("キャンセル", throwIfNotFound: true);
         m_インターフェース_ポーズ = m_インターフェース.FindAction("ポーズ", throwIfNotFound: true);
         m_インターフェース_スコアボード = m_インターフェース.FindAction("スコアボード", throwIfNotFound: true);
-        m_インターフェース_デバックじょうほう = m_インターフェース.FindAction("デバックじょうほう", throwIfNotFound: true);
+        m_インターフェース_デバッグじょうほう = m_インターフェース.FindAction("デバッグじょうほう", throwIfNotFound: true);
         m_インターフェース_SpectatePlayerByIndex = m_インターフェース.FindAction("!SpectatePlayerByIndex", throwIfNotFound: true);
         m_インターフェース_Point = m_インターフェース.FindAction("!Point", throwIfNotFound: true);
         m_インターフェース_Click = m_インターフェース.FindAction("!Click", throwIfNotFound: true);
@@ -1192,7 +1192,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
     private readonly InputAction m_プレイヤー_ジャンプ;
     private readonly InputAction m_プレイヤー_ダッシュ;
     private readonly InputAction m_プレイヤー_パワーアップアクション;
-    private readonly InputAction m_プレイヤー_イテムをとりだします;
+    private readonly InputAction m_プレイヤー_アイテムをとりだす;
     public struct プレイヤーActions
     {
         private @Controls m_Wrapper;
@@ -1201,7 +1201,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         public InputAction @ジャンプ => m_Wrapper.m_プレイヤー_ジャンプ;
         public InputAction @ダッシュ => m_Wrapper.m_プレイヤー_ダッシュ;
         public InputAction @パワーアップアクション => m_Wrapper.m_プレイヤー_パワーアップアクション;
-        public InputAction @イテムをとりだします => m_Wrapper.m_プレイヤー_イテムをとりだします;
+        public InputAction @アイテムをとりだす => m_Wrapper.m_プレイヤー_アイテムをとりだす;
         public InputActionMap Get() { return m_Wrapper.m_プレイヤー; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1223,9 +1223,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @パワーアップアクション.started -= m_Wrapper.m_プレイヤーActionsCallbackInterface.Onパワーアップアクション;
                 @パワーアップアクション.performed -= m_Wrapper.m_プレイヤーActionsCallbackInterface.Onパワーアップアクション;
                 @パワーアップアクション.canceled -= m_Wrapper.m_プレイヤーActionsCallbackInterface.Onパワーアップアクション;
-                @イテムをとりだします.started -= m_Wrapper.m_プレイヤーActionsCallbackInterface.Onイテムをとりだします;
-                @イテムをとりだします.performed -= m_Wrapper.m_プレイヤーActionsCallbackInterface.Onイテムをとりだします;
-                @イテムをとりだします.canceled -= m_Wrapper.m_プレイヤーActionsCallbackInterface.Onイテムをとりだします;
+                @アイテムをとりだす.started -= m_Wrapper.m_プレイヤーActionsCallbackInterface.Onアイテムをとりだす;
+                @アイテムをとりだす.performed -= m_Wrapper.m_プレイヤーActionsCallbackInterface.Onアイテムをとりだす;
+                @アイテムをとりだす.canceled -= m_Wrapper.m_プレイヤーActionsCallbackInterface.Onアイテムをとりだす;
             }
             m_Wrapper.m_プレイヤーActionsCallbackInterface = instance;
             if (instance != null)
@@ -1242,9 +1242,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @パワーアップアクション.started += instance.Onパワーアップアクション;
                 @パワーアップアクション.performed += instance.Onパワーアップアクション;
                 @パワーアップアクション.canceled += instance.Onパワーアップアクション;
-                @イテムをとりだします.started += instance.Onイテムをとりだします;
-                @イテムをとりだします.performed += instance.Onイテムをとりだします;
-                @イテムをとりだします.canceled += instance.Onイテムをとりだします;
+                @アイテムをとりだす.started += instance.Onアイテムをとりだす;
+                @アイテムをとりだす.performed += instance.Onアイテムをとりだす;
+                @アイテムをとりだす.canceled += instance.Onアイテムをとりだす;
             }
         }
     }
@@ -1258,7 +1258,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
     private readonly InputAction m_インターフェース_キャンセル;
     private readonly InputAction m_インターフェース_ポーズ;
     private readonly InputAction m_インターフェース_スコアボード;
-    private readonly InputAction m_インターフェース_デバックじょうほう;
+    private readonly InputAction m_インターフェース_デバッグじょうほう;
     private readonly InputAction m_インターフェース_SpectatePlayerByIndex;
     private readonly InputAction m_インターフェース_Point;
     private readonly InputAction m_インターフェース_Click;
@@ -1274,7 +1274,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         public InputAction @キャンセル => m_Wrapper.m_インターフェース_キャンセル;
         public InputAction @ポーズ => m_Wrapper.m_インターフェース_ポーズ;
         public InputAction @スコアボード => m_Wrapper.m_インターフェース_スコアボード;
-        public InputAction @デバックじょうほう => m_Wrapper.m_インターフェース_デバックじょうほう;
+        public InputAction @デバッグじょうほう => m_Wrapper.m_インターフェース_デバッグじょうほう;
         public InputAction @SpectatePlayerByIndex => m_Wrapper.m_インターフェース_SpectatePlayerByIndex;
         public InputAction @Point => m_Wrapper.m_インターフェース_Point;
         public InputAction @Click => m_Wrapper.m_インターフェース_Click;
@@ -1305,9 +1305,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @スコアボード.started -= m_Wrapper.m_インターフェースActionsCallbackInterface.Onスコアボード;
                 @スコアボード.performed -= m_Wrapper.m_インターフェースActionsCallbackInterface.Onスコアボード;
                 @スコアボード.canceled -= m_Wrapper.m_インターフェースActionsCallbackInterface.Onスコアボード;
-                @デバックじょうほう.started -= m_Wrapper.m_インターフェースActionsCallbackInterface.Onデバックじょうほう;
-                @デバックじょうほう.performed -= m_Wrapper.m_インターフェースActionsCallbackInterface.Onデバックじょうほう;
-                @デバックじょうほう.canceled -= m_Wrapper.m_インターフェースActionsCallbackInterface.Onデバックじょうほう;
+                @デバッグじょうほう.started -= m_Wrapper.m_インターフェースActionsCallbackInterface.Onデバッグじょうほう;
+                @デバッグじょうほう.performed -= m_Wrapper.m_インターフェースActionsCallbackInterface.Onデバッグじょうほう;
+                @デバッグじょうほう.canceled -= m_Wrapper.m_インターフェースActionsCallbackInterface.Onデバッグじょうほう;
                 @SpectatePlayerByIndex.started -= m_Wrapper.m_インターフェースActionsCallbackInterface.OnSpectatePlayerByIndex;
                 @SpectatePlayerByIndex.performed -= m_Wrapper.m_インターフェースActionsCallbackInterface.OnSpectatePlayerByIndex;
                 @SpectatePlayerByIndex.canceled -= m_Wrapper.m_インターフェースActionsCallbackInterface.OnSpectatePlayerByIndex;
@@ -1345,9 +1345,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @スコアボード.started += instance.Onスコアボード;
                 @スコアボード.performed += instance.Onスコアボード;
                 @スコアボード.canceled += instance.Onスコアボード;
-                @デバックじょうほう.started += instance.Onデバックじょうほう;
-                @デバックじょうほう.performed += instance.Onデバックじょうほう;
-                @デバックじょうほう.canceled += instance.Onデバックじょうほう;
+                @デバッグじょうほう.started += instance.Onデバッグじょうほう;
+                @デバッグじょうほう.performed += instance.Onデバッグじょうほう;
+                @デバッグじょうほう.canceled += instance.Onデバッグじょうほう;
                 @SpectatePlayerByIndex.started += instance.OnSpectatePlayerByIndex;
                 @SpectatePlayerByIndex.performed += instance.OnSpectatePlayerByIndex;
                 @SpectatePlayerByIndex.canceled += instance.OnSpectatePlayerByIndex;
@@ -1394,7 +1394,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         void Onジャンプ(InputAction.CallbackContext context);
         void Onダッシュ(InputAction.CallbackContext context);
         void Onパワーアップアクション(InputAction.CallbackContext context);
-        void Onイテムをとりだします(InputAction.CallbackContext context);
+        void Onアイテムをとりだす(InputAction.CallbackContext context);
     }
     public interface IインターフェースActions
     {
@@ -1403,7 +1403,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         void Onキャンセル(InputAction.CallbackContext context);
         void Onポーズ(InputAction.CallbackContext context);
         void Onスコアボード(InputAction.CallbackContext context);
-        void Onデバックじょうほう(InputAction.CallbackContext context);
+        void Onデバッグじょうほう(InputAction.CallbackContext context);
         void OnSpectatePlayerByIndex(InputAction.CallbackContext context);
         void OnPoint(InputAction.CallbackContext context);
         void OnClick(InputAction.CallbackContext context);

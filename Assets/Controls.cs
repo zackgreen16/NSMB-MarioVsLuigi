@@ -91,7 +91,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""いどう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -102,7 +102,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""いどう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -113,7 +113,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""いどう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -124,7 +124,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""いどう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -146,7 +146,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/upArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""いどう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -157,7 +157,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/downArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""いどう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -168,7 +168,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/leftArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""いどう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -179,7 +179,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/rightArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""いどう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -190,7 +190,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Gamepad>/leftStick"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Gamepad"",
+                    ""groups"": ""ゲームパッド"",
                     ""action"": ""いどう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -201,7 +201,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Gamepad>/dpad"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Gamepad"",
+                    ""groups"": ""ゲームパッド"",
                     ""action"": ""いどう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -212,7 +212,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/space"",
                     ""interactions"": ""Press(behavior=2)"",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""ジャンプ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -223,7 +223,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/z"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""ジャンプ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -234,7 +234,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Gamepad>/buttonSouth"",
                     ""interactions"": ""Press(behavior=2)"",
                     ""processors"": """",
-                    ""groups"": ""Gamepad"",
+                    ""groups"": ""ゲームパッド"",
                     ""action"": ""ジャンプ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -245,7 +245,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Gamepad>/buttonEast"",
                     ""interactions"": ""Press(behavior=2)"",
                     ""processors"": """",
-                    ""groups"": ""Gamepad"",
+                    ""groups"": ""ゲームパッド"",
                     ""action"": ""ジャンプ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -256,7 +256,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""パワーアップアクション"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -267,7 +267,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/c"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""パワーアップアクション"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -278,7 +278,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Gamepad>/rightShoulder"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Gamepad"",
+                    ""groups"": ""ゲームパッド"",
                     ""action"": ""パワーアップアクション"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -289,7 +289,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Gamepad>/rightTrigger"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Gamepad"",
+                    ""groups"": ""ゲームパッド"",
                     ""action"": ""パワーアップアクション"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -300,7 +300,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/q"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""イテムをとりだします"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -311,7 +311,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/v"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""イテムをとりだします"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -322,7 +322,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Gamepad>/leftShoulder"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Gamepad"",
+                    ""groups"": ""ゲームパッド"",
                     ""action"": ""イテムをとりだします"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -333,7 +333,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Gamepad>/leftTrigger"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Gamepad"",
+                    ""groups"": ""ゲームパッド"",
                     ""action"": ""イテムをとりだします"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -344,7 +344,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/shift"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""ダッシュ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -355,7 +355,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/x"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""ダッシュ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -366,7 +366,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Gamepad>/buttonWest"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Gamepad"",
+                    ""groups"": ""ゲームパッド"",
                     ""action"": ""ダッシュ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -377,7 +377,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Gamepad>/buttonNorth"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Gamepad"",
+                    ""groups"": ""ゲームパッド"",
                     ""action"": ""ダッシュ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -515,7 +515,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""UIのそうさ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -526,7 +526,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""UIのそうさ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -537,7 +537,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""UIのそうさ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -548,7 +548,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""UIのそうさ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -570,7 +570,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/upArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""UIのそうさ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -581,7 +581,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/downArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""UIのそうさ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -592,7 +592,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/leftArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""UIのそうさ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -603,7 +603,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/rightArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""UIのそうさ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -614,7 +614,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Gamepad>/leftStick"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Gamepad"",
+                    ""groups"": ""ゲームパッド"",
                     ""action"": ""UIのそうさ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -625,7 +625,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Gamepad>/dpad"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Gamepad"",
+                    ""groups"": ""ゲームパッド"",
                     ""action"": ""UIのそうさ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -636,7 +636,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/enter"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""けってい"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -647,7 +647,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/z"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""けってい"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -658,7 +658,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""*/{Submit}"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Gamepad"",
+                    ""groups"": ""ゲームパッド"",
                     ""action"": ""けってい"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -669,7 +669,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Gamepad"",
+                    ""groups"": ""ゲームパッド"",
                     ""action"": ""けってい"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -680,7 +680,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""キャンセル"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -691,7 +691,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/x"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""キャンセル"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -702,7 +702,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Mouse>/position"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse;Keyboard;Gamepad"",
+                    ""groups"": ""Keyboard&Mouse;キーボード;ゲームパッド"",
                     ""action"": ""!Point"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -713,7 +713,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Pen>/position"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse;Keyboard;Gamepad"",
+                    ""groups"": ""Keyboard&Mouse;キーボード;ゲームパッド"",
                     ""action"": ""!Point"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -724,7 +724,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Touchscreen>/touch*/position"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Touch;Keyboard;Gamepad"",
+                    ""groups"": ""Touch;キーボード;ゲームパッド"",
                     ""action"": ""!Point"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -735,7 +735,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse;Keyboard;Gamepad"",
+                    ""groups"": ""Keyboard&Mouse;キーボード;ゲームパッド"",
                     ""action"": ""!Click"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -746,7 +746,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Pen>/tip"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse;Gamepad;Keyboard"",
+                    ""groups"": ""Keyboard&Mouse;ゲームパッド;キーボード"",
                     ""action"": ""!Click"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -757,7 +757,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Touchscreen>/touch*/press"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Touch;Keyboard;Gamepad"",
+                    ""groups"": ""Touch;キーボード;ゲームパッド"",
                     ""action"": ""!Click"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -768,7 +768,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<XRController>/trigger"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""XR;Keyboard;Gamepad"",
+                    ""groups"": ""XR;キーボード;ゲームパッド"",
                     ""action"": ""!Click"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -779,7 +779,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Mouse>/scroll"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard;Gamepad"",
+                    ""groups"": ""キーボード;ゲームパッド"",
                     ""action"": ""!ScrollWheel"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -790,7 +790,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Mouse>/middleButton"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard;Gamepad"",
+                    ""groups"": ""キーボード;ゲームパッド"",
                     ""action"": ""!MiddleClick"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -801,7 +801,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Mouse>/rightButton"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard;Gamepad"",
+                    ""groups"": ""キーボード;ゲームパッド"",
                     ""action"": ""!RightClick"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -812,7 +812,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""*/{Back}"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Gamepad"",
+                    ""groups"": ""ゲームパッド"",
                     ""action"": ""キャンセル"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -823,7 +823,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Gamepad"",
+                    ""groups"": ""ゲームパッド"",
                     ""action"": ""キャンセル"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -834,7 +834,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""ポーズ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -845,7 +845,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""ポーズ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -856,7 +856,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""*/{Menu}"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Gamepad"",
+                    ""groups"": ""ゲームパッド"",
                     ""action"": ""ポーズ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -867,7 +867,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Gamepad"",
+                    ""groups"": ""ゲームパッド"",
                     ""action"": ""ポーズ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -878,7 +878,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/backquote"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""デバックじょうほう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -889,7 +889,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""デバックじょうほう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -900,7 +900,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Gamepad"",
+                    ""groups"": ""ゲームパッド"",
                     ""action"": ""デバックじょうほう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -911,7 +911,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Gamepad"",
+                    ""groups"": ""ゲームパッド"",
                     ""action"": ""デバックじょうほう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -922,7 +922,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/tab"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""スコアボード"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -933,7 +933,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""スコアボード"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -944,7 +944,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Gamepad>/select"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Gamepad"",
+                    ""groups"": ""ゲームパッド"",
                     ""action"": ""スコアボード"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -955,7 +955,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Gamepad"",
+                    ""groups"": ""ゲームパッド"",
                     ""action"": ""スコアボード"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -966,7 +966,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/1"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""!SpectatePlayerByIndex"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -977,7 +977,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/2"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""!SpectatePlayerByIndex"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -988,7 +988,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/3"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""!SpectatePlayerByIndex"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -999,7 +999,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/4"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""!SpectatePlayerByIndex"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -1010,7 +1010,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/5"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""!SpectatePlayerByIndex"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -1021,7 +1021,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/6"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""!SpectatePlayerByIndex"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -1032,7 +1032,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/7"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""!SpectatePlayerByIndex"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -1043,7 +1043,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/8"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""!SpectatePlayerByIndex"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -1054,7 +1054,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/9"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""!SpectatePlayerByIndex"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -1065,7 +1065,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/0"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""キーボード"",
                     ""action"": ""!SpectatePlayerByIndex"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -1075,8 +1075,8 @@ public partial class @Controls : IInputActionCollection2, IDisposable
     ],
     ""controlSchemes"": [
         {
-            ""name"": ""Keyboard"",
-            ""bindingGroup"": ""Keyboard"",
+            ""name"": ""キーボード"",
+            ""bindingGroup"": ""キーボード"",
             ""devices"": [
                 {
                     ""devicePath"": ""<Keyboard>"",
@@ -1091,8 +1091,8 @@ public partial class @Controls : IInputActionCollection2, IDisposable
             ]
         },
         {
-            ""name"": ""Gamepad"",
-            ""bindingGroup"": ""Gamepad"",
+            ""name"": ""ゲームパッド"",
+            ""bindingGroup"": ""ゲームパッド"",
             ""devices"": [
                 {
                     ""devicePath"": ""<Gamepad>"",
@@ -1370,22 +1370,22 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         }
     }
     public インターフェースActions @インターフェース => new インターフェースActions(this);
-    private int m_KeyboardSchemeIndex = -1;
-    public InputControlScheme KeyboardScheme
+    private int m_キーボードSchemeIndex = -1;
+    public InputControlScheme キーボードScheme
     {
         get
         {
-            if (m_KeyboardSchemeIndex == -1) m_KeyboardSchemeIndex = asset.FindControlSchemeIndex("Keyboard");
-            return asset.controlSchemes[m_KeyboardSchemeIndex];
+            if (m_キーボードSchemeIndex == -1) m_キーボードSchemeIndex = asset.FindControlSchemeIndex("キーボード");
+            return asset.controlSchemes[m_キーボードSchemeIndex];
         }
     }
-    private int m_GamepadSchemeIndex = -1;
-    public InputControlScheme GamepadScheme
+    private int m_ゲームパッドSchemeIndex = -1;
+    public InputControlScheme ゲームパッドScheme
     {
         get
         {
-            if (m_GamepadSchemeIndex == -1) m_GamepadSchemeIndex = asset.FindControlSchemeIndex("Gamepad");
-            return asset.controlSchemes[m_GamepadSchemeIndex];
+            if (m_ゲームパッドSchemeIndex == -1) m_ゲームパッドSchemeIndex = asset.FindControlSchemeIndex("ゲームパッド");
+            return asset.controlSchemes[m_ゲームパッドSchemeIndex];
         }
     }
     public interface IプレイヤーActions

@@ -1511,7 +1511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   emptyText: "\u30ED\u30FC\u30C9\u3061\u3085\u3046..."
-  iveLoadedText: "\u3057\u3070\u3089\u304F\u304A\u307E\u3061\u304F\u3060\u3055\u3044..."
+  iveLoadedText: "\u307B\u304B\u306E\u30D7\u30EC\u30A4\u30E4\u30FC\u3092\u307E\u3063\u3066\u3044\u307E\u3059..."
   readyToStartText: "\u30B9\u30BF\u30FC\u30C8\u3061\u3085\u3046..."
   spectatorText: "\u30DE\u30C3\u30C1\u3092\u898B\u3066\u3044..."
 --- !u!1 &1815946838

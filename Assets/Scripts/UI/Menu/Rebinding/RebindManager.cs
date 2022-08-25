@@ -122,7 +122,7 @@ public class RebindManager : MonoBehaviour {
                 }
             }
 
-            if (map.name == "Player")
+            if (map.name == "ƒvƒŒƒCƒ„[")
                 playerSettings.transform.SetAsLastSibling();
         }
     }

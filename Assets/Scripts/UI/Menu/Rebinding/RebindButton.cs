@@ -26,7 +26,7 @@ public class RebindButton : MonoBehaviour {
         targetAction.actionMap.Disable();
 
         MainMenuManager.Instance.rebindPrompt.SetActive(true);
-        MainMenuManager.Instance.rebindText.text = $"Rebinding {targetAction.name} {targetBinding.name} ({targetBinding.groups})\nPress any button or key.";
+        MainMenuManager.Instance.rebindText.text = $"{targetAction.name}をわりあてます。{targetBinding.name} ({targetBinding.groups})\nわりあてたいキーかボタンをおしてください。";
 
         rebinding = targetAction
             .PerformInteractiveRebinding()

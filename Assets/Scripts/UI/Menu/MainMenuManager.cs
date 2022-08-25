@@ -864,7 +864,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
 
     public void ChangeLevel(int index) {
         levelDropdown.SetValueWithoutNotify(index);
-        LocalChatMessage($"ステージが{levelDropdown.options[index].text}にへんこうされました: ", Color.red);
+        LocalChatMessage($"ステージが{levelDropdown.options[index].text}にへんこうされました ", Color.red);
         Camera.main.transform.position = levelCameraPositions[index].transform.position;
     }
     public void SetLevelIndex() {

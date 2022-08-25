@@ -51,7 +51,7 @@ public class GlobalController : Singleton<GlobalController>, IInRoomCallbacks, I
         PhotonNetwork.SendRate = 30;
         PhotonNetwork.MaxResendsBeforeDisconnect = 15;
 
-        InputSystem.controls.インターフェース.デバックじょうほう.performed += (context) => {
+        InputSystem.controls.インターフェース.デバッグじょうほう.performed += (context) => {
             graphy.SetActive(!graphy.activeSelf);
         };
 

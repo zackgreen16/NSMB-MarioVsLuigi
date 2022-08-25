@@ -42,7 +42,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "イテムをとりだします",
+                    "name": "アイテムをとりだす",
                     "type": "Button",
                     "id": "27ec6a67-2030-438e-ab5f-3e20fddb0588",
                     "expectedControlType": "Button",
@@ -279,7 +279,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "キーボード",
-                    "action": "イテムをとりだします",
+                    "action": "アイテムをとりだす",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -290,7 +290,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "キーボード",
-                    "action": "イテムをとりだします",
+                    "action": "アイテムをとりだす",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -301,7 +301,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "ゲームパッド",
-                    "action": "イテムをとりだします",
+                    "action": "アイテムをとりだす",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -312,7 +312,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "ゲームパッド",
-                    "action": "イテムをとりだします",
+                    "action": "アイテムをとりだす",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -412,7 +412,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "デバックじょうほう",
+                    "name": "デバッグじょうほう",
                     "type": "Button",
                     "id": "8cc650dc-a45e-4887-b332-7b0fdfdb1106",
                     "expectedControlType": "Button",
@@ -857,7 +857,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "キーボード",
-                    "action": "デバックじょうほう",
+                    "action": "デバッグじょうほう",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -868,7 +868,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "キーボード",
-                    "action": "デバックじょうほう",
+                    "action": "デバッグじょうほう",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -879,7 +879,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "ゲームパッド",
-                    "action": "デバックじょうほう",
+                    "action": "デバッグじょうほう",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -890,7 +890,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "ゲームパッド",
-                    "action": "デバックじょうほう",
+                    "action": "デバッグじょうほう",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

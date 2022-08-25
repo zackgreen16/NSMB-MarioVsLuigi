@@ -17,11 +17,11 @@ public class LeftRightButton : Selectable {
 
     protected override void OnEnable() {
         base.OnEnable();
-        InputSystem.controls.UI.Navigate.performed += OnNavigation;
+        InputSystem.controls.インターフェース.UIのそうさ.performed += OnNavigation;
     }
     protected override void OnDisable() {
         base.OnDisable();
-        InputSystem.controls.UI.Navigate.performed -= OnNavigation;
+        InputSystem.controls.インターフェース.UIのそうさ.performed -= OnNavigation;
     }
 
     protected override void Start() {

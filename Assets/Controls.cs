@@ -24,11 +24,11 @@ public partial class @Controls : IInputActionCollection2, IDisposable
     ""name"": ""Controls"",
     ""maps"": [
         {
-            ""name"": ""Player"",
+            ""name"": ""プレイヤー"",
             ""id"": ""2a2bcd05-0494-4a9c-8828-45e5f5e38a7e"",
             ""actions"": [
                 {
-                    ""name"": ""Movement"",
+                    ""name"": ""いどう"",
                     ""type"": ""Value"",
                     ""id"": ""a250dc6e-76cc-492f-803c-3b53bbe6df95"",
                     ""expectedControlType"": ""Vector2"",
@@ -37,7 +37,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Jump"",
+                    ""name"": ""ジャンプ"",
                     ""type"": ""Button"",
                     ""id"": ""7f6d93e5-bd0b-4095-bcc3-a687928f91b8"",
                     ""expectedControlType"": ""Button"",
@@ -46,7 +46,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Sprint"",
+                    ""name"": ""ダッシュ"",
                     ""type"": ""Value"",
                     ""id"": ""798623dc-6c31-47df-9cf8-f6d52086f268"",
                     ""expectedControlType"": """",
@@ -55,7 +55,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Powerup Action"",
+                    ""name"": ""パワーアップアクション"",
                     ""type"": ""Button"",
                     ""id"": ""65f84768-f346-4525-b429-95d650c37964"",
                     ""expectedControlType"": ""Button"",
@@ -64,7 +64,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Reserve Item"",
+                    ""name"": ""イテムをとりだします"",
                     ""type"": ""Button"",
                     ""id"": ""27ec6a67-2030-438e-ab5f-3e20fddb0588"",
                     ""expectedControlType"": ""Button"",
@@ -81,7 +81,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Movement"",
+                    ""action"": ""いどう"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -92,7 +92,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Movement"",
+                    ""action"": ""いどう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -103,7 +103,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Movement"",
+                    ""action"": ""いどう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -114,7 +114,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Movement"",
+                    ""action"": ""いどう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -125,7 +125,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Movement"",
+                    ""action"": ""いどう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -136,7 +136,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Movement"",
+                    ""action"": ""いどう"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -147,7 +147,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Movement"",
+                    ""action"": ""いどう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -158,7 +158,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Movement"",
+                    ""action"": ""いどう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -169,7 +169,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Movement"",
+                    ""action"": ""いどう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -180,7 +180,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Movement"",
+                    ""action"": ""いどう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -191,7 +191,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Movement"",
+                    ""action"": ""いどう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -202,7 +202,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Movement"",
+                    ""action"": ""いどう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -213,7 +213,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": ""Press(behavior=2)"",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Jump"",
+                    ""action"": ""ジャンプ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -224,7 +224,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Jump"",
+                    ""action"": ""ジャンプ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -235,7 +235,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": ""Press(behavior=2)"",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Jump"",
+                    ""action"": ""ジャンプ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -246,7 +246,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": ""Press(behavior=2)"",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Jump"",
+                    ""action"": ""ジャンプ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -257,7 +257,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Powerup Action"",
+                    ""action"": ""パワーアップアクション"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -268,7 +268,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Powerup Action"",
+                    ""action"": ""パワーアップアクション"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -279,7 +279,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Powerup Action"",
+                    ""action"": ""パワーアップアクション"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -290,7 +290,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Powerup Action"",
+                    ""action"": ""パワーアップアクション"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -301,7 +301,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Reserve Item"",
+                    ""action"": ""イテムをとりだします"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -312,7 +312,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Reserve Item"",
+                    ""action"": ""イテムをとりだします"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -323,7 +323,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Reserve Item"",
+                    ""action"": ""イテムをとりだします"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -334,7 +334,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Reserve Item"",
+                    ""action"": ""イテムをとりだします"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -345,7 +345,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Sprint"",
+                    ""action"": ""ダッシュ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -356,7 +356,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Sprint"",
+                    ""action"": ""ダッシュ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -367,7 +367,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Sprint"",
+                    ""action"": ""ダッシュ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -378,18 +378,18 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Sprint"",
+                    ""action"": ""ダッシュ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
             ]
         },
         {
-            ""name"": ""UI"",
+            ""name"": ""インターフェース"",
             ""id"": ""407e7f51-380f-4302-9bff-60ad8404c389"",
             ""actions"": [
                 {
-                    ""name"": ""Navigate"",
+                    ""name"": ""UIのそうさ"",
                     ""type"": ""Value"",
                     ""id"": ""b072402b-cb37-44ad-ad92-a6bfd444a263"",
                     ""expectedControlType"": ""Vector2"",
@@ -398,7 +398,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Submit"",
+                    ""name"": ""けってい"",
                     ""type"": ""Button"",
                     ""id"": ""758ce95c-f766-4c5d-8d4a-dd89249ab100"",
                     ""expectedControlType"": ""Button"",
@@ -407,7 +407,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Cancel"",
+                    ""name"": ""キャンセル"",
                     ""type"": ""Button"",
                     ""id"": ""c84903a3-a408-4390-bec1-f830d54ea872"",
                     ""expectedControlType"": ""Button"",
@@ -416,7 +416,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Pause"",
+                    ""name"": ""ポーズ"",
                     ""type"": ""Button"",
                     ""id"": ""f9cfbe05-8f85-454a-b6ad-67e0f242a73a"",
                     ""expectedControlType"": ""Button"",
@@ -425,7 +425,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Scoreboard"",
+                    ""name"": ""スコアボード"",
                     ""type"": ""Button"",
                     ""id"": ""ea6fc54f-16db-43be-9e14-c6c27a387e06"",
                     ""expectedControlType"": ""Button"",
@@ -434,7 +434,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Debug Info"",
+                    ""name"": ""デバックじょうほう"",
                     ""type"": ""Button"",
                     ""id"": ""8cc650dc-a45e-4887-b332-7b0fdfdb1106"",
                     ""expectedControlType"": ""Button"",
@@ -505,7 +505,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Navigate"",
+                    ""action"": ""UIのそうさ"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -516,7 +516,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Navigate"",
+                    ""action"": ""UIのそうさ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -527,7 +527,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Navigate"",
+                    ""action"": ""UIのそうさ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -538,7 +538,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Navigate"",
+                    ""action"": ""UIのそうさ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -549,7 +549,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Navigate"",
+                    ""action"": ""UIのそうさ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -560,7 +560,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Navigate"",
+                    ""action"": ""UIのそうさ"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -571,7 +571,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Navigate"",
+                    ""action"": ""UIのそうさ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -582,7 +582,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Navigate"",
+                    ""action"": ""UIのそうさ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -593,7 +593,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Navigate"",
+                    ""action"": ""UIのそうさ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -604,7 +604,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Navigate"",
+                    ""action"": ""UIのそうさ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -615,7 +615,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Navigate"",
+                    ""action"": ""UIのそうさ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -626,7 +626,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Navigate"",
+                    ""action"": ""UIのそうさ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -637,7 +637,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Submit"",
+                    ""action"": ""けってい"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -648,7 +648,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Submit"",
+                    ""action"": ""けってい"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -659,7 +659,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Submit"",
+                    ""action"": ""けってい"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -670,7 +670,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Submit"",
+                    ""action"": ""けってい"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -681,7 +681,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Cancel"",
+                    ""action"": ""キャンセル"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -692,7 +692,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Cancel"",
+                    ""action"": ""キャンセル"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -813,7 +813,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Cancel"",
+                    ""action"": ""キャンセル"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -824,7 +824,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Cancel"",
+                    ""action"": ""キャンセル"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -835,7 +835,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Pause"",
+                    ""action"": ""ポーズ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -846,7 +846,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Pause"",
+                    ""action"": ""ポーズ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -857,7 +857,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Pause"",
+                    ""action"": ""ポーズ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -868,7 +868,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Pause"",
+                    ""action"": ""ポーズ"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -879,7 +879,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Debug Info"",
+                    ""action"": ""デバックじょうほう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -890,7 +890,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Debug Info"",
+                    ""action"": ""デバックじょうほう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -901,7 +901,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Debug Info"",
+                    ""action"": ""デバックじょうほう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -912,7 +912,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Debug Info"",
+                    ""action"": ""デバックじょうほう"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -923,7 +923,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Scoreboard"",
+                    ""action"": ""スコアボード"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -934,7 +934,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Scoreboard"",
+                    ""action"": ""スコアボード"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -945,7 +945,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Scoreboard"",
+                    ""action"": ""スコアボード"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -956,7 +956,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Gamepad"",
-                    ""action"": ""Scoreboard"",
+                    ""action"": ""スコアボード"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -1108,27 +1108,27 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         }
     ]
 }");
-        // Player
-        m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
-        m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
-        m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
-        m_Player_Sprint = m_Player.FindAction("Sprint", throwIfNotFound: true);
-        m_Player_PowerupAction = m_Player.FindAction("Powerup Action", throwIfNotFound: true);
-        m_Player_ReserveItem = m_Player.FindAction("Reserve Item", throwIfNotFound: true);
-        // UI
-        m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
-        m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
-        m_UI_Submit = m_UI.FindAction("Submit", throwIfNotFound: true);
-        m_UI_Cancel = m_UI.FindAction("Cancel", throwIfNotFound: true);
-        m_UI_Pause = m_UI.FindAction("Pause", throwIfNotFound: true);
-        m_UI_Scoreboard = m_UI.FindAction("Scoreboard", throwIfNotFound: true);
-        m_UI_DebugInfo = m_UI.FindAction("Debug Info", throwIfNotFound: true);
-        m_UI_SpectatePlayerByIndex = m_UI.FindAction("!SpectatePlayerByIndex", throwIfNotFound: true);
-        m_UI_Point = m_UI.FindAction("!Point", throwIfNotFound: true);
-        m_UI_Click = m_UI.FindAction("!Click", throwIfNotFound: true);
-        m_UI_ScrollWheel = m_UI.FindAction("!ScrollWheel", throwIfNotFound: true);
-        m_UI_MiddleClick = m_UI.FindAction("!MiddleClick", throwIfNotFound: true);
-        m_UI_RightClick = m_UI.FindAction("!RightClick", throwIfNotFound: true);
+        // プレイヤー
+        m_プレイヤー = asset.FindActionMap("プレイヤー", throwIfNotFound: true);
+        m_プレイヤー_いどう = m_プレイヤー.FindAction("いどう", throwIfNotFound: true);
+        m_プレイヤー_ジャンプ = m_プレイヤー.FindAction("ジャンプ", throwIfNotFound: true);
+        m_プレイヤー_ダッシュ = m_プレイヤー.FindAction("ダッシュ", throwIfNotFound: true);
+        m_プレイヤー_パワーアップアクション = m_プレイヤー.FindAction("パワーアップアクション", throwIfNotFound: true);
+        m_プレイヤー_イテムをとりだします = m_プレイヤー.FindAction("イテムをとりだします", throwIfNotFound: true);
+        // インターフェース
+        m_インターフェース = asset.FindActionMap("インターフェース", throwIfNotFound: true);
+        m_インターフェース_UIのそうさ = m_インターフェース.FindAction("UIのそうさ", throwIfNotFound: true);
+        m_インターフェース_けってい = m_インターフェース.FindAction("けってい", throwIfNotFound: true);
+        m_インターフェース_キャンセル = m_インターフェース.FindAction("キャンセル", throwIfNotFound: true);
+        m_インターフェース_ポーズ = m_インターフェース.FindAction("ポーズ", throwIfNotFound: true);
+        m_インターフェース_スコアボード = m_インターフェース.FindAction("スコアボード", throwIfNotFound: true);
+        m_インターフェース_デバックじょうほう = m_インターフェース.FindAction("デバックじょうほう", throwIfNotFound: true);
+        m_インターフェース_SpectatePlayerByIndex = m_インターフェース.FindAction("!SpectatePlayerByIndex", throwIfNotFound: true);
+        m_インターフェース_Point = m_インターフェース.FindAction("!Point", throwIfNotFound: true);
+        m_インターフェース_Click = m_インターフェース.FindAction("!Click", throwIfNotFound: true);
+        m_インターフェース_ScrollWheel = m_インターフェース.FindAction("!ScrollWheel", throwIfNotFound: true);
+        m_インターフェース_MiddleClick = m_インターフェース.FindAction("!MiddleClick", throwIfNotFound: true);
+        m_インターフェース_RightClick = m_インターフェース.FindAction("!RightClick", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -1185,169 +1185,169 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         return asset.FindBinding(bindingMask, out action);
     }
 
-    // Player
-    private readonly InputActionMap m_Player;
-    private IPlayerActions m_PlayerActionsCallbackInterface;
-    private readonly InputAction m_Player_Movement;
-    private readonly InputAction m_Player_Jump;
-    private readonly InputAction m_Player_Sprint;
-    private readonly InputAction m_Player_PowerupAction;
-    private readonly InputAction m_Player_ReserveItem;
-    public struct PlayerActions
+    // プレイヤー
+    private readonly InputActionMap m_プレイヤー;
+    private IプレイヤーActions m_プレイヤーActionsCallbackInterface;
+    private readonly InputAction m_プレイヤー_いどう;
+    private readonly InputAction m_プレイヤー_ジャンプ;
+    private readonly InputAction m_プレイヤー_ダッシュ;
+    private readonly InputAction m_プレイヤー_パワーアップアクション;
+    private readonly InputAction m_プレイヤー_イテムをとりだします;
+    public struct プレイヤーActions
     {
         private @Controls m_Wrapper;
-        public PlayerActions(@Controls wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Movement => m_Wrapper.m_Player_Movement;
-        public InputAction @Jump => m_Wrapper.m_Player_Jump;
-        public InputAction @Sprint => m_Wrapper.m_Player_Sprint;
-        public InputAction @PowerupAction => m_Wrapper.m_Player_PowerupAction;
-        public InputAction @ReserveItem => m_Wrapper.m_Player_ReserveItem;
-        public InputActionMap Get() { return m_Wrapper.m_Player; }
+        public プレイヤーActions(@Controls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @いどう => m_Wrapper.m_プレイヤー_いどう;
+        public InputAction @ジャンプ => m_Wrapper.m_プレイヤー_ジャンプ;
+        public InputAction @ダッシュ => m_Wrapper.m_プレイヤー_ダッシュ;
+        public InputAction @パワーアップアクション => m_Wrapper.m_プレイヤー_パワーアップアクション;
+        public InputAction @イテムをとりだします => m_Wrapper.m_プレイヤー_イテムをとりだします;
+        public InputActionMap Get() { return m_Wrapper.m_プレイヤー; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(PlayerActions set) { return set.Get(); }
-        public void SetCallbacks(IPlayerActions instance)
+        public static implicit operator InputActionMap(プレイヤーActions set) { return set.Get(); }
+        public void SetCallbacks(IプレイヤーActions instance)
         {
-            if (m_Wrapper.m_PlayerActionsCallbackInterface != null)
+            if (m_Wrapper.m_プレイヤーActionsCallbackInterface != null)
             {
-                @Movement.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovement;
-                @Movement.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovement;
-                @Movement.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovement;
-                @Jump.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
-                @Jump.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
-                @Jump.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
-                @Sprint.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSprint;
-                @Sprint.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSprint;
-                @Sprint.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSprint;
-                @PowerupAction.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPowerupAction;
-                @PowerupAction.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPowerupAction;
-                @PowerupAction.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPowerupAction;
-                @ReserveItem.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnReserveItem;
-                @ReserveItem.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnReserveItem;
-                @ReserveItem.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnReserveItem;
+                @いどう.started -= m_Wrapper.m_プレイヤーActionsCallbackInterface.Onいどう;
+                @いどう.performed -= m_Wrapper.m_プレイヤーActionsCallbackInterface.Onいどう;
+                @いどう.canceled -= m_Wrapper.m_プレイヤーActionsCallbackInterface.Onいどう;
+                @ジャンプ.started -= m_Wrapper.m_プレイヤーActionsCallbackInterface.Onジャンプ;
+                @ジャンプ.performed -= m_Wrapper.m_プレイヤーActionsCallbackInterface.Onジャンプ;
+                @ジャンプ.canceled -= m_Wrapper.m_プレイヤーActionsCallbackInterface.Onジャンプ;
+                @ダッシュ.started -= m_Wrapper.m_プレイヤーActionsCallbackInterface.Onダッシュ;
+                @ダッシュ.performed -= m_Wrapper.m_プレイヤーActionsCallbackInterface.Onダッシュ;
+                @ダッシュ.canceled -= m_Wrapper.m_プレイヤーActionsCallbackInterface.Onダッシュ;
+                @パワーアップアクション.started -= m_Wrapper.m_プレイヤーActionsCallbackInterface.Onパワーアップアクション;
+                @パワーアップアクション.performed -= m_Wrapper.m_プレイヤーActionsCallbackInterface.Onパワーアップアクション;
+                @パワーアップアクション.canceled -= m_Wrapper.m_プレイヤーActionsCallbackInterface.Onパワーアップアクション;
+                @イテムをとりだします.started -= m_Wrapper.m_プレイヤーActionsCallbackInterface.Onイテムをとりだします;
+                @イテムをとりだします.performed -= m_Wrapper.m_プレイヤーActionsCallbackInterface.Onイテムをとりだします;
+                @イテムをとりだします.canceled -= m_Wrapper.m_プレイヤーActionsCallbackInterface.Onイテムをとりだします;
             }
-            m_Wrapper.m_PlayerActionsCallbackInterface = instance;
+            m_Wrapper.m_プレイヤーActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @Movement.started += instance.OnMovement;
-                @Movement.performed += instance.OnMovement;
-                @Movement.canceled += instance.OnMovement;
-                @Jump.started += instance.OnJump;
-                @Jump.performed += instance.OnJump;
-                @Jump.canceled += instance.OnJump;
-                @Sprint.started += instance.OnSprint;
-                @Sprint.performed += instance.OnSprint;
-                @Sprint.canceled += instance.OnSprint;
-                @PowerupAction.started += instance.OnPowerupAction;
-                @PowerupAction.performed += instance.OnPowerupAction;
-                @PowerupAction.canceled += instance.OnPowerupAction;
-                @ReserveItem.started += instance.OnReserveItem;
-                @ReserveItem.performed += instance.OnReserveItem;
-                @ReserveItem.canceled += instance.OnReserveItem;
+                @いどう.started += instance.Onいどう;
+                @いどう.performed += instance.Onいどう;
+                @いどう.canceled += instance.Onいどう;
+                @ジャンプ.started += instance.Onジャンプ;
+                @ジャンプ.performed += instance.Onジャンプ;
+                @ジャンプ.canceled += instance.Onジャンプ;
+                @ダッシュ.started += instance.Onダッシュ;
+                @ダッシュ.performed += instance.Onダッシュ;
+                @ダッシュ.canceled += instance.Onダッシュ;
+                @パワーアップアクション.started += instance.Onパワーアップアクション;
+                @パワーアップアクション.performed += instance.Onパワーアップアクション;
+                @パワーアップアクション.canceled += instance.Onパワーアップアクション;
+                @イテムをとりだします.started += instance.Onイテムをとりだします;
+                @イテムをとりだします.performed += instance.Onイテムをとりだします;
+                @イテムをとりだします.canceled += instance.Onイテムをとりだします;
             }
         }
     }
-    public PlayerActions @Player => new PlayerActions(this);
+    public プレイヤーActions @プレイヤー => new プレイヤーActions(this);
 
-    // UI
-    private readonly InputActionMap m_UI;
-    private IUIActions m_UIActionsCallbackInterface;
-    private readonly InputAction m_UI_Navigate;
-    private readonly InputAction m_UI_Submit;
-    private readonly InputAction m_UI_Cancel;
-    private readonly InputAction m_UI_Pause;
-    private readonly InputAction m_UI_Scoreboard;
-    private readonly InputAction m_UI_DebugInfo;
-    private readonly InputAction m_UI_SpectatePlayerByIndex;
-    private readonly InputAction m_UI_Point;
-    private readonly InputAction m_UI_Click;
-    private readonly InputAction m_UI_ScrollWheel;
-    private readonly InputAction m_UI_MiddleClick;
-    private readonly InputAction m_UI_RightClick;
-    public struct UIActions
+    // インターフェース
+    private readonly InputActionMap m_インターフェース;
+    private IインターフェースActions m_インターフェースActionsCallbackInterface;
+    private readonly InputAction m_インターフェース_UIのそうさ;
+    private readonly InputAction m_インターフェース_けってい;
+    private readonly InputAction m_インターフェース_キャンセル;
+    private readonly InputAction m_インターフェース_ポーズ;
+    private readonly InputAction m_インターフェース_スコアボード;
+    private readonly InputAction m_インターフェース_デバックじょうほう;
+    private readonly InputAction m_インターフェース_SpectatePlayerByIndex;
+    private readonly InputAction m_インターフェース_Point;
+    private readonly InputAction m_インターフェース_Click;
+    private readonly InputAction m_インターフェース_ScrollWheel;
+    private readonly InputAction m_インターフェース_MiddleClick;
+    private readonly InputAction m_インターフェース_RightClick;
+    public struct インターフェースActions
     {
         private @Controls m_Wrapper;
-        public UIActions(@Controls wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Navigate => m_Wrapper.m_UI_Navigate;
-        public InputAction @Submit => m_Wrapper.m_UI_Submit;
-        public InputAction @Cancel => m_Wrapper.m_UI_Cancel;
-        public InputAction @Pause => m_Wrapper.m_UI_Pause;
-        public InputAction @Scoreboard => m_Wrapper.m_UI_Scoreboard;
-        public InputAction @DebugInfo => m_Wrapper.m_UI_DebugInfo;
-        public InputAction @SpectatePlayerByIndex => m_Wrapper.m_UI_SpectatePlayerByIndex;
-        public InputAction @Point => m_Wrapper.m_UI_Point;
-        public InputAction @Click => m_Wrapper.m_UI_Click;
-        public InputAction @ScrollWheel => m_Wrapper.m_UI_ScrollWheel;
-        public InputAction @MiddleClick => m_Wrapper.m_UI_MiddleClick;
-        public InputAction @RightClick => m_Wrapper.m_UI_RightClick;
-        public InputActionMap Get() { return m_Wrapper.m_UI; }
+        public インターフェースActions(@Controls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @UIのそうさ => m_Wrapper.m_インターフェース_UIのそうさ;
+        public InputAction @けってい => m_Wrapper.m_インターフェース_けってい;
+        public InputAction @キャンセル => m_Wrapper.m_インターフェース_キャンセル;
+        public InputAction @ポーズ => m_Wrapper.m_インターフェース_ポーズ;
+        public InputAction @スコアボード => m_Wrapper.m_インターフェース_スコアボード;
+        public InputAction @デバックじょうほう => m_Wrapper.m_インターフェース_デバックじょうほう;
+        public InputAction @SpectatePlayerByIndex => m_Wrapper.m_インターフェース_SpectatePlayerByIndex;
+        public InputAction @Point => m_Wrapper.m_インターフェース_Point;
+        public InputAction @Click => m_Wrapper.m_インターフェース_Click;
+        public InputAction @ScrollWheel => m_Wrapper.m_インターフェース_ScrollWheel;
+        public InputAction @MiddleClick => m_Wrapper.m_インターフェース_MiddleClick;
+        public InputAction @RightClick => m_Wrapper.m_インターフェース_RightClick;
+        public InputActionMap Get() { return m_Wrapper.m_インターフェース; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(UIActions set) { return set.Get(); }
-        public void SetCallbacks(IUIActions instance)
+        public static implicit operator InputActionMap(インターフェースActions set) { return set.Get(); }
+        public void SetCallbacks(IインターフェースActions instance)
         {
-            if (m_Wrapper.m_UIActionsCallbackInterface != null)
+            if (m_Wrapper.m_インターフェースActionsCallbackInterface != null)
             {
-                @Navigate.started -= m_Wrapper.m_UIActionsCallbackInterface.OnNavigate;
-                @Navigate.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnNavigate;
-                @Navigate.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnNavigate;
-                @Submit.started -= m_Wrapper.m_UIActionsCallbackInterface.OnSubmit;
-                @Submit.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnSubmit;
-                @Submit.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnSubmit;
-                @Cancel.started -= m_Wrapper.m_UIActionsCallbackInterface.OnCancel;
-                @Cancel.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnCancel;
-                @Cancel.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnCancel;
-                @Pause.started -= m_Wrapper.m_UIActionsCallbackInterface.OnPause;
-                @Pause.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnPause;
-                @Pause.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnPause;
-                @Scoreboard.started -= m_Wrapper.m_UIActionsCallbackInterface.OnScoreboard;
-                @Scoreboard.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnScoreboard;
-                @Scoreboard.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnScoreboard;
-                @DebugInfo.started -= m_Wrapper.m_UIActionsCallbackInterface.OnDebugInfo;
-                @DebugInfo.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnDebugInfo;
-                @DebugInfo.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnDebugInfo;
-                @SpectatePlayerByIndex.started -= m_Wrapper.m_UIActionsCallbackInterface.OnSpectatePlayerByIndex;
-                @SpectatePlayerByIndex.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnSpectatePlayerByIndex;
-                @SpectatePlayerByIndex.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnSpectatePlayerByIndex;
-                @Point.started -= m_Wrapper.m_UIActionsCallbackInterface.OnPoint;
-                @Point.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnPoint;
-                @Point.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnPoint;
-                @Click.started -= m_Wrapper.m_UIActionsCallbackInterface.OnClick;
-                @Click.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnClick;
-                @Click.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnClick;
-                @ScrollWheel.started -= m_Wrapper.m_UIActionsCallbackInterface.OnScrollWheel;
-                @ScrollWheel.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnScrollWheel;
-                @ScrollWheel.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnScrollWheel;
-                @MiddleClick.started -= m_Wrapper.m_UIActionsCallbackInterface.OnMiddleClick;
-                @MiddleClick.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnMiddleClick;
-                @MiddleClick.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnMiddleClick;
-                @RightClick.started -= m_Wrapper.m_UIActionsCallbackInterface.OnRightClick;
-                @RightClick.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnRightClick;
-                @RightClick.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnRightClick;
+                @UIのそうさ.started -= m_Wrapper.m_インターフェースActionsCallbackInterface.OnUIのそうさ;
+                @UIのそうさ.performed -= m_Wrapper.m_インターフェースActionsCallbackInterface.OnUIのそうさ;
+                @UIのそうさ.canceled -= m_Wrapper.m_インターフェースActionsCallbackInterface.OnUIのそうさ;
+                @けってい.started -= m_Wrapper.m_インターフェースActionsCallbackInterface.Onけってい;
+                @けってい.performed -= m_Wrapper.m_インターフェースActionsCallbackInterface.Onけってい;
+                @けってい.canceled -= m_Wrapper.m_インターフェースActionsCallbackInterface.Onけってい;
+                @キャンセル.started -= m_Wrapper.m_インターフェースActionsCallbackInterface.Onキャンセル;
+                @キャンセル.performed -= m_Wrapper.m_インターフェースActionsCallbackInterface.Onキャンセル;
+                @キャンセル.canceled -= m_Wrapper.m_インターフェースActionsCallbackInterface.Onキャンセル;
+                @ポーズ.started -= m_Wrapper.m_インターフェースActionsCallbackInterface.Onポーズ;
+                @ポーズ.performed -= m_Wrapper.m_インターフェースActionsCallbackInterface.Onポーズ;
+                @ポーズ.canceled -= m_Wrapper.m_インターフェースActionsCallbackInterface.Onポーズ;
+                @スコアボード.started -= m_Wrapper.m_インターフェースActionsCallbackInterface.Onスコアボード;
+                @スコアボード.performed -= m_Wrapper.m_インターフェースActionsCallbackInterface.Onスコアボード;
+                @スコアボード.canceled -= m_Wrapper.m_インターフェースActionsCallbackInterface.Onスコアボード;
+                @デバックじょうほう.started -= m_Wrapper.m_インターフェースActionsCallbackInterface.Onデバックじょうほう;
+                @デバックじょうほう.performed -= m_Wrapper.m_インターフェースActionsCallbackInterface.Onデバックじょうほう;
+                @デバックじょうほう.canceled -= m_Wrapper.m_インターフェースActionsCallbackInterface.Onデバックじょうほう;
+                @SpectatePlayerByIndex.started -= m_Wrapper.m_インターフェースActionsCallbackInterface.OnSpectatePlayerByIndex;
+                @SpectatePlayerByIndex.performed -= m_Wrapper.m_インターフェースActionsCallbackInterface.OnSpectatePlayerByIndex;
+                @SpectatePlayerByIndex.canceled -= m_Wrapper.m_インターフェースActionsCallbackInterface.OnSpectatePlayerByIndex;
+                @Point.started -= m_Wrapper.m_インターフェースActionsCallbackInterface.OnPoint;
+                @Point.performed -= m_Wrapper.m_インターフェースActionsCallbackInterface.OnPoint;
+                @Point.canceled -= m_Wrapper.m_インターフェースActionsCallbackInterface.OnPoint;
+                @Click.started -= m_Wrapper.m_インターフェースActionsCallbackInterface.OnClick;
+                @Click.performed -= m_Wrapper.m_インターフェースActionsCallbackInterface.OnClick;
+                @Click.canceled -= m_Wrapper.m_インターフェースActionsCallbackInterface.OnClick;
+                @ScrollWheel.started -= m_Wrapper.m_インターフェースActionsCallbackInterface.OnScrollWheel;
+                @ScrollWheel.performed -= m_Wrapper.m_インターフェースActionsCallbackInterface.OnScrollWheel;
+                @ScrollWheel.canceled -= m_Wrapper.m_インターフェースActionsCallbackInterface.OnScrollWheel;
+                @MiddleClick.started -= m_Wrapper.m_インターフェースActionsCallbackInterface.OnMiddleClick;
+                @MiddleClick.performed -= m_Wrapper.m_インターフェースActionsCallbackInterface.OnMiddleClick;
+                @MiddleClick.canceled -= m_Wrapper.m_インターフェースActionsCallbackInterface.OnMiddleClick;
+                @RightClick.started -= m_Wrapper.m_インターフェースActionsCallbackInterface.OnRightClick;
+                @RightClick.performed -= m_Wrapper.m_インターフェースActionsCallbackInterface.OnRightClick;
+                @RightClick.canceled -= m_Wrapper.m_インターフェースActionsCallbackInterface.OnRightClick;
             }
-            m_Wrapper.m_UIActionsCallbackInterface = instance;
+            m_Wrapper.m_インターフェースActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @Navigate.started += instance.OnNavigate;
-                @Navigate.performed += instance.OnNavigate;
-                @Navigate.canceled += instance.OnNavigate;
-                @Submit.started += instance.OnSubmit;
-                @Submit.performed += instance.OnSubmit;
-                @Submit.canceled += instance.OnSubmit;
-                @Cancel.started += instance.OnCancel;
-                @Cancel.performed += instance.OnCancel;
-                @Cancel.canceled += instance.OnCancel;
-                @Pause.started += instance.OnPause;
-                @Pause.performed += instance.OnPause;
-                @Pause.canceled += instance.OnPause;
-                @Scoreboard.started += instance.OnScoreboard;
-                @Scoreboard.performed += instance.OnScoreboard;
-                @Scoreboard.canceled += instance.OnScoreboard;
-                @DebugInfo.started += instance.OnDebugInfo;
-                @DebugInfo.performed += instance.OnDebugInfo;
-                @DebugInfo.canceled += instance.OnDebugInfo;
+                @UIのそうさ.started += instance.OnUIのそうさ;
+                @UIのそうさ.performed += instance.OnUIのそうさ;
+                @UIのそうさ.canceled += instance.OnUIのそうさ;
+                @けってい.started += instance.Onけってい;
+                @けってい.performed += instance.Onけってい;
+                @けってい.canceled += instance.Onけってい;
+                @キャンセル.started += instance.Onキャンセル;
+                @キャンセル.performed += instance.Onキャンセル;
+                @キャンセル.canceled += instance.Onキャンセル;
+                @ポーズ.started += instance.Onポーズ;
+                @ポーズ.performed += instance.Onポーズ;
+                @ポーズ.canceled += instance.Onポーズ;
+                @スコアボード.started += instance.Onスコアボード;
+                @スコアボード.performed += instance.Onスコアボード;
+                @スコアボード.canceled += instance.Onスコアボード;
+                @デバックじょうほう.started += instance.Onデバックじょうほう;
+                @デバックじょうほう.performed += instance.Onデバックじょうほう;
+                @デバックじょうほう.canceled += instance.Onデバックじょうほう;
                 @SpectatePlayerByIndex.started += instance.OnSpectatePlayerByIndex;
                 @SpectatePlayerByIndex.performed += instance.OnSpectatePlayerByIndex;
                 @SpectatePlayerByIndex.canceled += instance.OnSpectatePlayerByIndex;
@@ -1369,7 +1369,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
             }
         }
     }
-    public UIActions @UI => new UIActions(this);
+    public インターフェースActions @インターフェース => new インターフェースActions(this);
     private int m_KeyboardSchemeIndex = -1;
     public InputControlScheme KeyboardScheme
     {
@@ -1388,22 +1388,22 @@ public partial class @Controls : IInputActionCollection2, IDisposable
             return asset.controlSchemes[m_GamepadSchemeIndex];
         }
     }
-    public interface IPlayerActions
+    public interface IプレイヤーActions
     {
-        void OnMovement(InputAction.CallbackContext context);
-        void OnJump(InputAction.CallbackContext context);
-        void OnSprint(InputAction.CallbackContext context);
-        void OnPowerupAction(InputAction.CallbackContext context);
-        void OnReserveItem(InputAction.CallbackContext context);
+        void Onいどう(InputAction.CallbackContext context);
+        void Onジャンプ(InputAction.CallbackContext context);
+        void Onダッシュ(InputAction.CallbackContext context);
+        void Onパワーアップアクション(InputAction.CallbackContext context);
+        void Onイテムをとりだします(InputAction.CallbackContext context);
     }
-    public interface IUIActions
+    public interface IインターフェースActions
     {
-        void OnNavigate(InputAction.CallbackContext context);
-        void OnSubmit(InputAction.CallbackContext context);
-        void OnCancel(InputAction.CallbackContext context);
-        void OnPause(InputAction.CallbackContext context);
-        void OnScoreboard(InputAction.CallbackContext context);
-        void OnDebugInfo(InputAction.CallbackContext context);
+        void OnUIのそうさ(InputAction.CallbackContext context);
+        void Onけってい(InputAction.CallbackContext context);
+        void Onキャンセル(InputAction.CallbackContext context);
+        void Onポーズ(InputAction.CallbackContext context);
+        void Onスコアボード(InputAction.CallbackContext context);
+        void Onデバックじょうほう(InputAction.CallbackContext context);
         void OnSpectatePlayerByIndex(InputAction.CallbackContext context);
         void OnPoint(InputAction.CallbackContext context);
         void OnClick(InputAction.CallbackContext context);

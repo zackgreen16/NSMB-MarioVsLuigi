@@ -409,7 +409,7 @@ public class GameManager : MonoBehaviour, IOnEventCallback, IInRoomCallbacks, IC
     public void OnEnable() {
         Instance = this;
         PhotonNetwork.AddCallbackTarget(this);
-        InputSystem.controls.UI.Pause.performed += OnPause;
+        InputSystem.controls.インターフェース.ポーズ.performed += OnPause;
     }
     public void OnDisable() {
         foreach (GameManager gm in FindObjectsOfType<GameManager>()) {
@@ -419,7 +419,7 @@ public class GameManager : MonoBehaviour, IOnEventCallback, IInRoomCallbacks, IC
             }
         }
         PhotonNetwork.RemoveCallbackTarget(this);
-        InputSystem.controls.UI.Pause.performed -= OnPause;
+        InputSystem.controls.インターフェース.ポーズ.performed -= OnPause;
     }
 
     public void Awake() {

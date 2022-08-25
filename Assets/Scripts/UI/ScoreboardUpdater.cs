@@ -15,10 +15,10 @@ public class ScoreboardUpdater : MonoBehaviour {
     private Animator animator;
 
     public void OnEnable() {
-        InputSystem.controls.UI.Scoreboard.performed += OnToggle;
+        InputSystem.controls.インターフェース.スコアボード.performed += OnToggle;
     }
     public void OnDisable() {
-        InputSystem.controls.UI.Scoreboard.performed -= OnToggle;
+        InputSystem.controls.インターフェース.スコアボード.performed -= OnToggle;
     }
 
     private void OnToggle(InputAction.CallbackContext context) {

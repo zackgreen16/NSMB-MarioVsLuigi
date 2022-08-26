@@ -537,7 +537,7 @@ public class GameManager : MonoBehaviour, IOnEventCallback, IInRoomCallbacks, IC
 
         if (gameStarting) {
             yield return new WaitForSeconds(3.5f);
-            sfx.PlayOneShot(Enums.Sounds.UI_StartGame.GetClip());
+            //sfx.PlayOneShot(Enums.Sounds.UI_StartGame.GetClip());
 
             if (PhotonNetwork.IsMasterClient)
                 foreach (EnemySpawnpoint point in FindObjectsOfType<EnemySpawnpoint>())

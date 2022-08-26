@@ -1291,9 +1291,11 @@ public class PlayerController : MonoBehaviourPun, IFreezableEntity, ICustomSeria
         animator.SetBool("knockback", false);
         animator.SetBool("flying", false);
         animator.SetBool("firedeath", fire);
-        if (photonView.IsMine)
-            GameManager.Instance.music.Stop();
-        PlaySound(Enums.Sounds.Player_Sound_Death);
+        if (photonView.IsMine) {
+            GameManager.Instance.music.Pause();
+            PlaySound(Enums.Sounds.Player_Sound_Death); }   
+        else
+            PlaySound(Enums.Sounds.Player_Sound_Death_2);
         SpawnStars(1, deathplane);
         body.isKinematic = false;
         if (holding) {

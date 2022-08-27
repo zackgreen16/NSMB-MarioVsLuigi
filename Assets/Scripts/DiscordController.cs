@@ -84,7 +84,7 @@ public class DiscordController : MonoBehaviour {
 
             activity.Details = PhotonNetwork.OfflineMode ? "オンラインでプレイ中" : "オンラインでプレイ中";
             activity.Party = new() { Size = new() { CurrentSize = room.PlayerCount, MaxSize = room.MaxPlayers }, Id = PhotonNetwork.CurrentRoom.Name };
-            activity.State = room.IsVisible ? "公共ロビーで" : "プライベートロビーで";
+            activity.State = room.IsVisible ? "パブリックロビーで" : "プライベートロビーで";
             activity.Secrets = new() { Join = PhotonNetwork.CloudRegion + "-" + room.Name };
 
             ActivityAssets assets = new();
@@ -108,7 +108,7 @@ public class DiscordController : MonoBehaviour {
 
             activity.Details = PhotonNetwork.OfflineMode ? "オフラインでプレイ中" : "オンラインでプレイ中";
             activity.Party = new() { Size = new() { CurrentSize = room.PlayerCount, MaxSize = room.MaxPlayers }, Id = PhotonNetwork.CurrentRoom.Name };
-            activity.State = room.IsVisible ? "公共ロビーで" : "プライベートロビーで";
+            activity.State = room.IsVisible ? "パブリックロビーで" : "プライベートロビーで";
             activity.Secrets = new() { Join = PhotonNetwork.CloudRegion + "-" + room.Name };
 
             activity.Assets = new() { LargeImage = "mainmenu" };
@@ -116,7 +116,7 @@ public class DiscordController : MonoBehaviour {
         } else {
             //in the main menu, not in a room
 
-            activity.Details = "メインメニューで...";
+            activity.Details = "ロビーに参加していません";
             activity.Assets = new() { LargeImage = "mainmenu" };
 
         }

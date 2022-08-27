@@ -1078,7 +1078,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
 
     public void Ban(Player target) {
         if (target.IsLocal) {
-            LocalChatMessage("BANされません… あなたはホスト。", Color.red);
+            LocalChatMessage("じぶんをBANすることはできません。", Color.red);
             return;
         }
 
@@ -1203,7 +1203,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
             return;
         }
         }
-        LocalChatMessage($"エラー: コマンドはそんざいしません。\n/helpコマンドためしてみてください。", Color.red);
+        LocalChatMessage($"エラー: コマンドはそんざいしません。\n/helpコマンドをためしてみてください。", Color.red);
         return;
     }
 

@@ -61,7 +61,7 @@ public class SpectationManager : MonoBehaviour {
         if (!TargetPlayer || !TargetPlayer.photonView)
             return;
 
-        spectatingText.text = $" { TargetPlayer.photonView.Owner.GetUniqueNickname() }がみる:";
+        spectatingText.text = $"かんせんちゅうのプレイヤー:{ TargetPlayer.photonView.Owner.GetUniqueNickname() }";
     }
 
     public void SpectateNextPlayer() {

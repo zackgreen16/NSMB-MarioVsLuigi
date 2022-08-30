@@ -161,6 +161,7 @@ public static class Enums {
     public static class NetPlayerProperties {
         public static string Character { get; } = "C";
         public static string Ping { get; } = "P";
+        public static string Wins { get; } = "W";
         public static string PlayerColor { get; } = "C1";
         public static string GameState { get; } = "S";
         public static string Status { get; } = "St";

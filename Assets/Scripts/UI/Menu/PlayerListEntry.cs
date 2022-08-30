@@ -46,6 +46,7 @@ public class PlayerListEntry : MonoBehaviour {
 
         string characterSymbol = Utils.GetCharacterData(player).uistring;
         Utils.GetCustomProperty(Enums.NetPlayerProperties.Ping, out int ping, player.CustomProperties);
+        Utils.GetCustomProperty(Enums.NetPlayerProperties.Wins, out int wins, player.CustomProperties);
 
         string pingColor;
         if (ping < 0) {
@@ -58,7 +59,7 @@ public class PlayerListEntry : MonoBehaviour {
             pingColor = "red";
         }
 
-        nameText.text = permissionSymbol + characterSymbol + player.GetUniqueNickname();
+        nameText.text = permissionSymbol + characterSymbol + wins.ToString();//player.GetUniqueNickname();
         pingText.text = $"<color={pingColor}>{ping}";
 
         Transform parent = transform.parent;

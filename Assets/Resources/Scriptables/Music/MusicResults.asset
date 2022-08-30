@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e5478bfbe63c3c46b392d3ca752690c, type: 3}
   m_Name: MusicResults
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 5518b67c23c860d4aa235a64d47ff6d3, type: 3}
-  loopStartSample: 0
-  loopEndSample: 0
+  clip: {fileID: 8300000, guid: fc90aaa51e700ad428bce5ba595f65a3, type: 3}
+  loopStartSample: 3.947
+  loopEndSample: 35.7

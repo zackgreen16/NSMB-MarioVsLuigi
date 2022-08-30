@@ -35731,7 +35731,6 @@ MonoBehaviour:
   sliderText: {fileID: 1514315584}
   lobbyText: {fileID: 465989235}
   currentMaxPlayers: {fileID: 1732849129}
-  winCount: {fileID: 810952030}
   settingsPanel: {fileID: 823064025}
   levelDropdown: {fileID: 2036188050}
   characterDropdown: {fileID: 8412145}
@@ -35793,6 +35792,7 @@ MonoBehaviour:
   rebindText: {fileID: 1382848006}
   reconnectText: {fileID: 0}
   updateText: {fileID: 664659097}
+  winsText: {fileID: 0}
   region: {fileID: 947074750}
   rebindManager: {fileID: 1657549225}
   connectThroughSecret: 

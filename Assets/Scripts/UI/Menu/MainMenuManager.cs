@@ -73,6 +73,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
         Hashtable prop = new() {
             { Enums.NetPlayerProperties.Character, Settings.Instance.character },
             { Enums.NetPlayerProperties.Ping, PhotonNetwork.GetPing() },
+            { Enums.NetPlayerProperties.Wins, 0}, 
             { Enums.NetPlayerProperties.PlayerColor, Settings.Instance.skin },
             { Enums.NetPlayerProperties.Spectator, false },
         };
@@ -604,7 +605,6 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
 
         PhotonNetwork.LocalPlayer.SetCustomProperties(new() {
             [Enums.NetPlayerProperties.GameState] = null,
-            [Enums.NetPlayerProperties.Wins] = 0, 
             [Enums.NetPlayerProperties.Status] = Debug.isDebugBuild || Application.isEditor,
         });
         if (updatePingCoroutine == null)

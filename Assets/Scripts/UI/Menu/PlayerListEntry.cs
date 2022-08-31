@@ -15,7 +15,7 @@ public class PlayerListEntry : MonoBehaviour {
 
     public Player player;
 
-    [SerializeField] private TMP_Text nameText, pingText;
+    [SerializeField] private TMP_Text nameText, pingText, winsText;
     [SerializeField] private Image colorStrip;
 
     [SerializeField] private RectTransform background, options;
@@ -59,8 +59,10 @@ public class PlayerListEntry : MonoBehaviour {
             pingColor = "red";
         }
 
-        nameText.text = permissionSymbol + characterSymbol + wins.ToString();//player.GetUniqueNickname();
+        nameText.text = permissionSymbol + characterSymbol + player.GetUniqueNickname();
         pingText.text = $"<color={pingColor}>{ping}";
+        if (winsText != null)
+            winsText.text = $"Wins: {wins}";
 
         Transform parent = transform.parent;
         int childIndex = 0;

@@ -36,7 +36,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
     public Slider musicSlider, sfxSlider, masterSlider, lobbyPlayersSlider, changePlayersSlider;
     public GameObject mainMenuSelected, optionsSelected, lobbySelected, resultsSelected, currentLobbySelected, createLobbySelected, continueSelected, creditsSelected, controlsSelected, privateSelected, reconnectSelected, updateBoxSelected;
     public GameObject errorBox, errorButton, rebindPrompt, reconnectBox;
-    public TMP_Text errorText, rebindCountdown, rebindText, reconnectText, updateText, winsText;
+    public TMP_Text errorText, rebindCountdown, rebindText, reconnectText, updateText;
     public TMP_Dropdown region;
     public RebindManager rebindManager;
     public static string lastRegion;

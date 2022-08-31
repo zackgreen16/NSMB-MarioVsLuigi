@@ -12221,7 +12221,7 @@ RectTransform:
   - {fileID: 1712687880}
   - {fileID: 783941689}
   - {fileID: 1693793530}
-  - {fileID: 810952031}
+  - {fileID: 1510053471}
   - {fileID: 1254016060}
   m_Father: {fileID: 1733279839}
   m_RootOrder: 0
@@ -12245,6 +12245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 783941687}
   pingText: {fileID: 1693793528}
+  winsText: {fileID: 1510053472}
   colorStrip: {fileID: 1712687878}
   background: {fileID: 517126511}
   options: {fileID: 1773878394}
@@ -28384,43 +28385,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 807581177}
   m_CullTransparentMesh: 1
---- !u!1 &810952030
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 810952031}
-  m_Layer: 5
-  m_Name: WinCount
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &810952031
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 810952030}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1510053471}
-  m_Father: {fileID: 428529898}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.68979, y: -18.67437}
-  m_SizeDelta: {x: 96.62044, y: 7.34773}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &811181791
 GameObject:
   m_ObjectHideFlags: 0
@@ -35792,7 +35756,6 @@ MonoBehaviour:
   rebindText: {fileID: 1382848006}
   reconnectText: {fileID: 0}
   updateText: {fileID: 664659097}
-  winsText: {fileID: 0}
   region: {fileID: 947074750}
   rebindManager: {fileID: 1657549225}
   connectThroughSecret: 
@@ -35885,7 +35848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 887693667}
-  currentSong: {fileID: 11400000, guid: 23a35df2ddd1bb4438cf5c9d89a2ceae, type: 2}
+  currentSong: {fileID: 11400000, guid: fe75b1974602544419c350e6c2b9ac93, type: 2}
 --- !u!82 &887693667
 AudioSource:
   m_ObjectHideFlags: 0
@@ -83032,7 +82995,7 @@ GameObject:
   - component: {fileID: 1510053473}
   - component: {fileID: 1510053472}
   m_Layer: 5
-  m_Name: Text
+  m_Name: WinsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83045,17 +83008,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1510053470}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 810952031}
+  m_Father: {fileID: 428529898}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 48.5, y: -14.9}
+  m_AnchoredPosition: {x: 46.810207, y: -33.574364}
   m_SizeDelta: {x: 188.35919, y: 50.37549}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1510053472
@@ -92112,6 +92075,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 238321102}
   pingText: {fileID: 695280297}
+  winsText: {fileID: 0}
   colorStrip: {fileID: 1313273476}
   background: {fileID: 469620838}
   options: {fileID: 1728600503}

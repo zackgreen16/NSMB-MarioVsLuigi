@@ -588,12 +588,17 @@ public class GameManager : MonoBehaviour, IOnEventCallback, IInRoomCallbacks, IC
         bool win = winner != null && winner.IsLocal;
         bool draw = winner == null;
         int secondsUntilMenu;
-        secondsUntilMenu = draw ? 5 : 4;
+        secondsUntilMenu = draw ? 4 : 4;
 
         if (draw)
             music.PlayOneShot(Enums.Sounds.UI_Match_Draw.GetClip());
-        else if (win)
+        else if (win) {
             music.PlayOneShot(Enums.Sounds.UI_Match_Win.GetClip());
+            Hashtable props = new() {
+                { Enums.NetPlayerProperties.Wins, 1 }
+            };
+            PhotonNetwork.CurrentRoom.SetCustomProperties(props);
+        }
         else
             music.PlayOneShot(Enums.Sounds.UI_Match_Lose.GetClip());
 

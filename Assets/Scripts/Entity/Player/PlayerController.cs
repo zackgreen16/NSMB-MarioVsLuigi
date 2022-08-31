@@ -1294,7 +1294,10 @@ public class PlayerController : MonoBehaviourPun, IFreezableEntity, ICustomSeria
         if (photonView.IsMine) {
             GameManager.Instance.music.Pause();
             GameManager.Instance.music.time = 0f;
-            PlaySound(Enums.Sounds.Player_Sound_Death); }   
+            if (lives == 0)
+                PlaySound(Enums.Sounds.Player_Sound_Death_2);
+            else
+                PlaySound(Enums.Sounds.Player_Sound_Death); }   
         else
             PlaySound(Enums.Sounds.Player_Sound_Death_2);
         SpawnStars(1, deathplane);

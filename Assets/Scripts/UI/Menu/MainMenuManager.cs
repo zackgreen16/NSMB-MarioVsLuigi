@@ -584,8 +584,8 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
             return;
         }
 
-        //OpenInLobbyMenu();
-        OpenResultsScreen();
+        OpenInLobbyMenu();
+        //OpenResultsScreen();
         characterDropdown.SetValueWithoutNotify(Utils.GetCharacterIndex());
 
         if (PhotonNetwork.IsMasterClient)

@@ -1315,7 +1315,6 @@ public class PlayerController : MonoBehaviourPun, IFreezableEntity, ICustomSeria
 
     [PunRPC]
     public void PreRespawn() {
-
         sfx.enabled = true;
         if (lives == 0) {
             GameManager.Instance.CheckForWinner();
@@ -1323,6 +1322,7 @@ public class PlayerController : MonoBehaviourPun, IFreezableEntity, ICustomSeria
             if (photonView.IsMine) {
                 PhotonNetwork.Destroy(photonView);
                 GameManager.Instance.SpectationManager.Spectating = true;
+                GameManager.Instance.music.Play();
             }
             Destroy(gameObject);
             return;

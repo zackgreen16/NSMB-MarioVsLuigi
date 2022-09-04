@@ -247,13 +247,13 @@ public class PlayerController : MonoBehaviourPun, IFreezableEntity, ICustomSeria
         Utils.GetCustomProperty(Enums.NetRoomProperties.Lives, out lives);
 
         if (photonView.IsMine) {
-            InputSystem.controls.プレイヤー.performed += OnMovement;
-            InputSystem.controls.プレイヤー.canceled += OnMovement;
-            InputSystem.controls.プレイヤー.performed += OnJump;
-            InputSystem.controls.プレイヤー.started += OnSprint;
-            InputSystem.controls.プレイヤー.canceled += OnSprint;
-            InputSystem.controls.プレイヤー.performed += OnPowerupAction;
-            InputSystem.controls.プレイヤーperformed += OnReserveItem;
+            InputSystem.controls.プレイヤー.いどう.performed += OnMovement;
+            InputSystem.controls.プレイヤー.いどう.canceled += OnMovement;
+            InputSystem.controls.プレイヤー.ジャンプ.performed += OnJump;
+            InputSystem.controls.プレイヤー.ダッシュ.started += OnSprint;
+            InputSystem.controls.プレイヤー.ダッシュ.canceled += OnSprint;
+            InputSystem.controls.プレイヤー.パワーアップアクション.performed += OnPowerupAction;
+            InputSystem.controls.プレイヤー.アイテムをとりだす.performed += OnReserveItem;
         }
 
         GameManager.Instance.players.Add(this);
@@ -276,13 +276,13 @@ public class PlayerController : MonoBehaviourPun, IFreezableEntity, ICustomSeria
         if (!photonView.IsMine)
             return;
 
-        InputSystem.controls.プレイヤー.performed -= OnMovement;
-        InputSystem.controls.プレイヤー.canceled -= OnMovement;
-        InputSystem.controls.プレイヤー.performed -= OnJump;
-        InputSystem.controls.プレイヤー.started -= OnSprint;
-        InputSystem.controls.プレイヤー.canceled -= OnSprint;
-        InputSystem.controls.プレイヤー.performed -= OnPowerupAction;
-        InputSystem.controls.プレイヤー.performed -= OnReserveItem;
+        InputSystem.controls.プレイヤー.いどう.performed -= OnMovement;
+        InputSystem.controls.プレイヤー.いどう.canceled -= OnMovement;
+        InputSystem.controls.プレイヤー.ジャンプ.performed -= OnJump;
+        InputSystem.controls.プレイヤー.ダッシュ.started -= OnSprint;
+        InputSystem.controls.プレイヤー.ダッシュ.canceled -= OnSprint;
+        InputSystem.controls.プレイヤー.パワーアップアクション.performed -= OnPowerupAction;
+        InputSystem.controls.プレイヤー.アイテムをとりだす.performed -= OnReserveItem;
     }
 
     public void OnGameStart() {

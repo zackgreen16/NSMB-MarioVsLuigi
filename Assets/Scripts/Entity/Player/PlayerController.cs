@@ -247,13 +247,13 @@ public class PlayerController : MonoBehaviourPun, IFreezableEntity, ICustomSeria
         Utils.GetCustomProperty(Enums.NetRoomProperties.Lives, out lives);
 
         if (photonView.IsMine) {
-            InputSystem.controls.プレイヤー.いどう.performed += OnMovement;
-            InputSystem.controls.プレイヤー.いどう.canceled += OnMovement;
-            InputSystem.controls.プレイヤー.ジャンプ.performed += OnJump;
-            InputSystem.controls.プレイヤー.ダッシュ.started += OnSprint;
-            InputSystem.controls.プレイヤー.ダッシュ.canceled += OnSprint;
-            InputSystem.controls.プレイヤー.パワーアップアクション.performed += OnPowerupAction;
-            InputSystem.controls.プレイヤー.アイテムをとりだす.performed += OnReserveItem;
+            InputSystem.controls.繝励Ξ繧､繝､繝ｼ.performed += OnMovement;
+            InputSystem.controls.繝励Ξ繧､繝､繝ｼ.canceled += OnMovement;
+            InputSystem.controls.繝励Ξ繧､繝､繝ｼ.performed += OnJump;
+            InputSystem.controls.繝励Ξ繧､繝､繝ｼ.started += OnSprint;
+            InputSystem.controls.繝励Ξ繧､繝､繝ｼ.canceled += OnSprint;
+            InputSystem.controls.繝励Ξ繧､繝､繝ｼ.performed += OnPowerupAction;
+            InputSystem.controls.繝励Ξ繧､繝､繝ｼperformed += OnReserveItem;
         }
 
         GameManager.Instance.players.Add(this);
@@ -276,13 +276,13 @@ public class PlayerController : MonoBehaviourPun, IFreezableEntity, ICustomSeria
         if (!photonView.IsMine)
             return;
 
-        InputSystem.controls.プレイヤー.いどう.performed -= OnMovement;
-        InputSystem.controls.プレイヤー.いどう.canceled -= OnMovement;
-        InputSystem.controls.プレイヤー.ジャンプ.performed -= OnJump;
-        InputSystem.controls.プレイヤー.ダッシュ.started -= OnSprint;
-        InputSystem.controls.プレイヤー.ダッシュ.canceled -= OnSprint;
-        InputSystem.controls.プレイヤー.パワーアップアクション.performed -= OnPowerupAction;
-        InputSystem.controls.プレイヤー.アイテムをとりだす.performed -= OnReserveItem;
+        InputSystem.controls.繝励Ξ繧､繝､繝ｼ.performed -= OnMovement;
+        InputSystem.controls.繝励Ξ繧､繝､繝ｼ.canceled -= OnMovement;
+        InputSystem.controls.繝励Ξ繧､繝､繝ｼ.performed -= OnJump;
+        InputSystem.controls.繝励Ξ繧､繝､繝ｼ.started -= OnSprint;
+        InputSystem.controls.繝励Ξ繧､繝､繝ｼ.canceled -= OnSprint;
+        InputSystem.controls.繝励Ξ繧､繝､繝ｼ.performed -= OnPowerupAction;
+        InputSystem.controls.繝励Ξ繧､繝､繝ｼ.performed -= OnReserveItem;
     }
 
     public void OnGameStart() {
@@ -2615,7 +2615,7 @@ public class PlayerController : MonoBehaviourPun, IFreezableEntity, ICustomSeria
             crouching = false;
             inShell = false;
             body.velocity -= body.velocity * (delta * 2f);
-            if (photonView.IsMine && onGround && ((Mathf.Abs(body.velocity.x) < 0.2f && knockbackTimer <= 0) || knockbackTimer > -3f))
+            if (photonView.IsMine && onGround && ((Mathf.Abs(body.velocity.x) < 0.2f && knockbackTimer <= 0) || knockbackTimer < -3f))
                 photonView.RPC(nameof(ResetKnockback), RpcTarget.All);
             if (holding) {
                 holding.photonView.RPC(nameof(HoldableEntity.Throw), RpcTarget.All, !facingRight, true, body.position);

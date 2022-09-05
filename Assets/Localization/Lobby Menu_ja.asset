@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Lobby Menu_ja
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: ja
+  m_SharedData: {fileID: 11400000, guid: 6edae0da97a3bc748ab545bf6d2b6da4, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 62320246784
+    m_Localized: "\u30ED\u30D3\u30FC\u30BB\u30EC\u30AF\u30C8"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 356932354048
+    m_Localized: "\u30ED\u30D3\u30FC\u306B\u3055\u3093\u304B"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 532753383424
+    m_Localized: "\u30ED\u30D3\u30FC\u3092\u3055\u304F\u305B\u3044"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 933091311616
+    m_Localized: "\u30E6\u30FC\u30B6\u30CD\u30FC\u30E0\u3092\u306B\u3085\u3046\u308A\u3087\u304F\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1220787011584
+    m_Localized: "\u30E6\u30FC\u30B6\u30FC\u30CD\u30FC\u30E0:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35946474209280
+    m_Localized: "\u30ED\u30D3\u30FCID\u3067\u3055\u3093\u304B\u3059\u308B"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

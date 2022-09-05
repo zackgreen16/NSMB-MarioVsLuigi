@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Game Manager Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Game Manager
+  m_TableCollectionNameGuidString: ccf4b221117ace744a5b72e77a7c0a7b
+  m_Entries:
+  - m_Id: 107748753408
+    m_Key: Key_Game_Manager_Pause_Header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 702438146048
+    m_Key: Key_Game_Manager_Pause_Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1045494464512
+    m_Key: Key_Game_Manager_Pause_Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1473313472512
+    m_Key: Key_Game_Manager_Pause_Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1669518819328
+    m_Key: Key_Game_Manager_Pause_Quit_Host
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3039382700032
+    m_Key: Key_Game_Manager_Pause_Quit_Header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3429020958720
+    m_Key: Key_Game_Manager_Pause_Quit_Lobby_Select
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3728339075072
+    m_Key: Key_Game_Manager_Pause_Quit_End_Match
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3987081494528
+    m_Key: Key_Game_Manager_Pause_Quit_Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4312790171648
+    m_Key: Key_Game_Manager_Scoreboard_Header
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 3551363311956918287
+  references:
+    version: 2
+    RefIds:
+    - rid: 3551363311956918287
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1662394956631

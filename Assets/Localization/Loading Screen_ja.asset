@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: Lobby Menu_es
+  m_Name: Loading Screen_ja
   m_EditorClassIdentifier: 
   m_LocaleId:
-    m_Code: es
-  m_SharedData: {fileID: 11400000, guid: 6edae0da97a3bc748ab545bf6d2b6da4, type: 2}
+    m_Code: ja
+  m_SharedData: {fileID: 11400000, guid: 7810dd8cba206e647ae35d0509501e17, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 78331849703424
-    m_Localized: 
+  - m_Id: 48034447360
+    m_Localized: READY!
     m_Metadata:
       m_Items: []
   references:

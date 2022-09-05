@@ -39,6 +39,38 @@ MonoBehaviour:
     m_Key: Key_Lobby_Menu_Join_ID
     m_Metadata:
       m_Items: []
+  - m_Id: 74750216077312
+    m_Key: Key_Lobby_Menu_Connecting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75277389758464
+    m_Key: Key_Lobby_Menu_Create_Box_Header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77263745024000
+    m_Key: Key_Lobby_Menu_Create_Box_Players_Max
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78331849703424
+    m_Key: Key_Lobby_Menu_Create_Box_Private
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79597891977216
+    m_Key: Key_Lobby_Menu_Create_Box_Confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79836531097600
+    m_Key: Key_Lobby_Menu_Create_Box_Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80173115604992
+    m_Key: Key_Lobby_Menu_Join_Box_Header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80530805850112
+    m_Key: Key_Lobby_Menu_Join_Box_Confirm
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

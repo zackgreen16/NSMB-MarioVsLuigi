@@ -42,6 +42,40 @@ MonoBehaviour:
     m_Localized: Join Lobby using ID
     m_Metadata:
       m_Items: []
+  - m_Id: 74750216077312
+    m_Localized: Connecting...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75277389758464
+    m_Localized: Lobby Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77263745024000
+    m_Localized: 'Max
+
+      Players'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79597891977216
+    m_Localized: Create
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79836531097600
+    m_Localized: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80173115604992
+    m_Localized: Enter Lobby ID
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80530805850112
+    m_Localized: Join
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78331849703424
+    m_Localized: Private Lobby
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

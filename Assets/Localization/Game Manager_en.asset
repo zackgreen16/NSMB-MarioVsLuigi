@@ -10,62 +10,57 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: Main Menu_en
+  m_Name: Game Manager_en
   m_EditorClassIdentifier: 
   m_LocaleId:
     m_Code: en
-  m_SharedData: {fileID: 11400000, guid: 3129e15249d64764f8ece87824baa34e, type: 2}
+  m_SharedData: {fileID: 11400000, guid: ccf4b221117ace744a5b72e77a7c0a7b, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 250032128000
-    m_Localized: Main Menu
+  - m_Id: 107748753408
+    m_Localized: Pause
     m_Metadata:
       m_Items: []
-  - m_Id: 3261009723392
-    m_Localized: Play Game
+  - m_Id: 702438146048
+    m_Localized: Continue
     m_Metadata:
       m_Items: []
-  - m_Id: 3465385574400
+  - m_Id: 1045494464512
     m_Localized: Options
     m_Metadata:
       m_Items: []
-  - m_Id: 4571473870848
+  - m_Id: 1473313472512
     m_Localized: Quit
     m_Metadata:
       m_Items: []
-  - m_Id: 5004992937984
-    m_Localized: About
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5268902739968
-    m_Localized: Click to Start
-    m_Metadata:
-      m_Items: []
-  - m_Id: 89130341203968
-    m_Localized: Error
-    m_Metadata:
-      m_Items: []
-  - m_Id: 91940868816896
-    m_Localized: Update Available
-    m_Metadata:
-      m_Items: []
-  - m_Id: 92632488574976
-    m_Localized: 'There is an update:
+  - m_Id: 1669518819328
+    m_Localized: 'You''re the host.
 
+      Do you want to end the match?
 
-      New Version: v1.6.6.0-beta
-
-      Your
-      version: v1.6.5.0-beta'
+      Or,
+      do you want to return to Lobby Select?'
     m_Metadata:
       m_Items: []
-  - m_Id: 93571073146880
-    m_Localized: Go to Downloads
+  - m_Id: 3039382700032
+    m_Localized: Quit
     m_Metadata:
       m_Items: []
-  - m_Id: 93779215482880
-    m_Localized: Ignore
+  - m_Id: 3429020958720
+    m_Localized: Return to Lobby Select
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3728339075072
+    m_Localized: End Match
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3987081494528
+    m_Localized: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4312790171648
+    m_Localized: Scoreboard
     m_Metadata:
       m_Items: []
   references:

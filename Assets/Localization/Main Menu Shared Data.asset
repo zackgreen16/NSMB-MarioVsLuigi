@@ -39,6 +39,26 @@ MonoBehaviour:
     m_Key: Key_Main_Menu_Press_to_Start
     m_Metadata:
       m_Items: []
+  - m_Id: 89130341203968
+    m_Key: Key_Main_Menu_Error_Box_Header
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91940868816896
+    m_Key: Key_Main_Menu_Update_Available
+    m_Metadata:
+      m_Items: []
+  - m_Id: 92632488574976
+    m_Key: Key_Main_Menu_Update_Available_Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93571073146880
+    m_Key: Key_Main_Menu_Update_Box_Downloads
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93779215482880
+    m_Key: Key_Main_Menu_Update_Box_Ignore
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -10,16 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: Lobby Menu_es
+  m_Name: Controls Menu_ja
   m_EditorClassIdentifier: 
   m_LocaleId:
-    m_Code: es
-  m_SharedData: {fileID: 11400000, guid: 6edae0da97a3bc748ab545bf6d2b6da4, type: 2}
+    m_Code: ja
+  m_SharedData: {fileID: 11400000, guid: 62cd5036e10f2dc4a9ca216ef2dbfc5a, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 78331849703424
-    m_Localized: 
+  - m_Id: 49766694912
+    m_Localized: "\u305D\u3046\u3055"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 463534784512
+    m_Localized: "\u30C7\u30D5\u30A9\u30EB\u30C8\u306B\u3082\u3069\u3059"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7478927654912
+    m_Localized: "\u308F\u308A\u3042\u3066\u308B"
     m_Metadata:
       m_Items: []
   references:

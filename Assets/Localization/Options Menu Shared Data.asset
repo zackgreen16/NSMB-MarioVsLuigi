@@ -59,6 +59,10 @@ MonoBehaviour:
     m_Key: Key_Options_VSync
     m_Metadata:
       m_Items: []
+  - m_Id: 76745773645824
+    m_Key: Key_Options_Menu_Languages_Dropdown
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

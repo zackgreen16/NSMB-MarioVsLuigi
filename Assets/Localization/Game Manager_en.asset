@@ -37,10 +37,10 @@ MonoBehaviour:
   - m_Id: 1669518819328
     m_Localized: 'You''re the host.
 
-      Do you want to end the match?
+      Do you want to end the match,
 
-      Or,
-      do you want to return to Lobby Select?'
+      or
+      return to the Lobby Menu?'
     m_Metadata:
       m_Items: []
   - m_Id: 3039382700032
@@ -48,7 +48,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3429020958720
-    m_Localized: Return to Lobby Select
+    m_Localized: Lobby Menu
     m_Metadata:
       m_Items: []
   - m_Id: 3728339075072

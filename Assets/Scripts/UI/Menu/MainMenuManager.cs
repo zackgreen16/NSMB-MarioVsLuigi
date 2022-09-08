@@ -27,7 +27,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
     public GameObject title, bg, mainMenu, optionsMenu, lobbyMenu, resultsScreen, createLobbyPrompt, inLobbyMenu, creditsMenu, controlsMenu, privatePrompt, updateBox;
     public GameObject[] levelCameraPositions;
     public GameObject sliderText, lobbyText, currentMaxPlayers, settingsPanel;
-    public TMP_Dropdown levelDropdown, characterDropdown;
+    public TMP_Dropdown levelDropdown, characterDropdown, languageDropdown;
     public RoomIcon selectedRoomIcon, privateJoinRoom;
     public Button joinRoomBtn, createRoomBtn, startGameBtn, contBtn;
     public Toggle ndsResolutionToggle, fullscreenToggle, randomMapsToggle, livesEnabled, powerupsEnabled, timeEnabled, drawTimeupToggle, fireballToggle, vsyncToggle, privateToggle, privateToggleRoom, aspectToggle, spectateToggle, scoreboardToggle, filterToggle;
@@ -51,7 +51,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
 
     public Selectable[] roomSettings;
 
-    public List<string> maps, debugMaps;
+    public List<string> maps, debugMaps, languages;
 
     private bool pingsReceived, joinedLate;
     private List<string> formattedRegions;

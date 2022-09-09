@@ -14,6 +14,7 @@ using Photon.Pun;
 using Photon.Realtime;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 using NSMB.Utils;
+using UnityEditor.Localization;
 
 public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks, IOnEventCallback, IConnectionCallbacks, IMatchmakingCallbacks {
 
@@ -430,6 +431,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
 
         Camera.main.transform.position = levelCameraPositions[Random.Range(0, maps.Count)].transform.position;
         levelDropdown.AddOptions(maps);
+        languageDropdown.AddOptions(languages);
         LoadSettings(!PhotonNetwork.InRoom);
 
         //Photon stuff.

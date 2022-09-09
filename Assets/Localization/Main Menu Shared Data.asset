@@ -59,6 +59,10 @@ MonoBehaviour:
     m_Key: Key_Main_Menu_Update_Box_Ignore
     m_Metadata:
       m_Items: []
+  - m_Id: 1642364553887744
+    m_Key: Key_Main_Menu_Lang_Btn
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

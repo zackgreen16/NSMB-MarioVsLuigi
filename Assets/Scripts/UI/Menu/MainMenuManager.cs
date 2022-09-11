@@ -14,7 +14,7 @@ using Photon.Pun;
 using Photon.Realtime;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 using NSMB.Utils;
-using UnityEditor.Localization;
+using UnityEngine.Localization.Settings;
 
 public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks, IOnEventCallback, IConnectionCallbacks, IMatchmakingCallbacks {
 
@@ -537,6 +537,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
         joinRoomBtn.interactable = connected && selectedRoomIcon != null && validName;
         createRoomBtn.interactable = connected && validName;
         region.interactable = connected;
+        LocalizationSettings.Instance.SetSelectedLocale(LocalizationSettings.AvailableLocales.Locales[languageDropdown.value]);
 
         if (pingsReceived) {
 

@@ -69,7 +69,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1642364553887744
-    m_Localized: Language
+    m_Localized: 'Language:'
     m_Metadata:
       m_Items: []
   references:

@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Current Lobby_tr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: tr
+  m_SharedData: {fileID: 11400000, guid: b523e175191e0864fbd093193859bae4, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 75024793600
+    m_Localized: "Oyunu Ba\u015Flat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346710835200
+    m_Localized: "Lobiden \xE7\u0131k"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 523207147520
+    m_Localized: "Yaz\u0131 gir..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 855731568640
+    m_Localized: Sustur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1063567720448
+    m_Localized: At
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1281633779712
+    m_Localized: Ban
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1639928004608
+    m_Localized: Terfi et
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1911353999360
+    m_Localized: ID'yi kopyala
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2214719619072
+    m_Localized: "--- Oyuncu Ayarlar\u0131 ---"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31672142888960
+    m_Localized: 'Karakter:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2646430941184
+    m_Localized: 'Renkler:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2893760659456
+    m_Localized: "Ma\xE7\u0131 izle:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3276348293120
+    m_Localized: "--- Oyun Ayarlar\u0131 ---"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3578803748864
+    m_Localized: 'Rastgele Haritalar:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3800535629824
+    m_Localized: 'Harita:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27749768200192
+    m_Localized: "B\xFCy\xFCk y\u0131ld\u0131zlar:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28231182024704
+    m_Localized: "E\u015Fya fiyat\u0131:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28416767393792
+    m_Localized: 'Canlar:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28693796978688
+    m_Localized: "Zaman S\u0131n\u0131r\u0131:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28995447128064
+    m_Localized: "Zaman doldu\u011Funda beraberlik:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29342433509376
+    m_Localized: "\xD6zel G\xFC\xE7lendiriciler:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29648118579200
+    m_Localized: "--- Sunucu Ayarlar\u0131 ---"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29966847934464
+    m_Localized: 'Oyuncular:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 30169051136000
+    m_Localized: "\xD6zel Lobi:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 31978536796160
+    m_Localized: "G\xF6nder"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -10,32 +10,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: Loading Screen_ja
+  m_Name: Loading Screen_tr
   m_EditorClassIdentifier: 
   m_LocaleId:
-    m_Code: ja
+    m_Code: tr
   m_SharedData: {fileID: 11400000, guid: 7810dd8cba206e647ae35d0509501e17, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
   - m_Id: 48034447360
-    m_Localized: READY!
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4435781524619264
-    m_Localized: "\u30ED\u30FC\u30C9\u3061\u3085\u3046\u2026"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4435858875973632
-    m_Localized: "\u307B\u304B\u306E\u30D7\u30EC\u30A4\u30E4\u30FC\u3092\u307E\u3063\u3066\u3044\u307E\u3059\u2026"
+    m_Localized: "Haz\u0131r!"
     m_Metadata:
       m_Items: []
   - m_Id: 4436204721504256
-    m_Localized: "\u304B\u3093\u305B\u3093\u3057\u3083\u3068\u3057\u3066\u3055\u3093\u304B\u3061\u3085\u3046\u2026"
+    m_Localized: "\u0130zleyici olarak kat\u0131l\u0131n\u0131yor..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4435858875973632
+    m_Localized: "Di\u011Fer oyuncular bekleniyor..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4435781524619264
+    m_Localized: "Y\xFCkleniyor..."
     m_Metadata:
       m_Items: []
   - m_Id: 4436601469108224
-    m_Localized: "\u30B9\u30BF\u30FC\u30C8\u3061\u3085\u3046\u2026"
+    m_Localized: "Ba\u015Fl\u0131yor..."
     m_Metadata:
       m_Items: []
   references:

@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Lobby Menu_tr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: tr
+  m_SharedData: {fileID: 11400000, guid: 6edae0da97a3bc748ab545bf6d2b6da4, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 62320246784
+    m_Localized: Lobiler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 933091311616
+    m_Localized: "Bir Kullan\u0131c\u0131 ad girin..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1220787011584
+    m_Localized: "Kullan\u0131c\u0131 ad:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 356932354048
+    m_Localized: "Lobiye kat\u0131l"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 532753383424
+    m_Localized: Lobi kur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35946474209280
+    m_Localized: "\xD6zel bir Lobiye kat\u0131l"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74750216077312
+    m_Localized: "Ba\u011Flan\u0131l\u0131yor..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 75277389758464
+    m_Localized: Bir Lobi Kur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77263745024000
+    m_Localized: "Maks Oyuncu Say\u0131s\u0131"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78331849703424
+    m_Localized: "\xD6zel Lobi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80173115604992
+    m_Localized: Oda ID'si gir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79836531097600
+    m_Localized: "\u0130ptal"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80530805850112
+    m_Localized: Onayla
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79597891977216
+    m_Localized: Onayla
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

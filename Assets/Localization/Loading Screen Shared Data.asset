@@ -19,6 +19,22 @@ MonoBehaviour:
     m_Key: Key_Loading_Ready_Text
     m_Metadata:
       m_Items: []
+  - m_Id: 4435781524619264
+    m_Key: Key_Loading_Loading_Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4435858875973632
+    m_Key: Key_Loading_Waiting_For_Players_Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4436204721504256
+    m_Key: Key_Loading_Joining_Spect_Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4436601469108224
+    m_Key: Key_Loading_Starting_Text
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -10,32 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: Loading Screen_en
+  m_Name: Controls Menu_tr
   m_EditorClassIdentifier: 
   m_LocaleId:
-    m_Code: en
-  m_SharedData: {fileID: 11400000, guid: 7810dd8cba206e647ae35d0509501e17, type: 2}
+    m_Code: tr
+  m_SharedData: {fileID: 11400000, guid: 62cd5036e10f2dc4a9ca216ef2dbfc5a, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 48034447360
-    m_Localized: Ready!
+  - m_Id: 49766694912
+    m_Localized: Kontroller
     m_Metadata:
       m_Items: []
-  - m_Id: 4435781524619264
-    m_Localized: Loading...
+  - m_Id: 463534784512
+    m_Localized: "Varsay\u0131lana Geri D\xF6n"
     m_Metadata:
       m_Items: []
-  - m_Id: 4435858875973632
-    m_Localized: Waiting for others...
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4436204721504256
-    m_Localized: Joining as Spectator...
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4436601469108224
-    m_Localized: Starting...
+  - m_Id: 7478927654912
+    m_Localized: "De\u011Fi\u015Ftiliy"
     m_Metadata:
       m_Items: []
   references:

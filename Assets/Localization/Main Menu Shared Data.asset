@@ -63,6 +63,10 @@ MonoBehaviour:
     m_Key: Key_Main_Menu_Lang_Btn
     m_Metadata:
       m_Items: []
+  - m_Id: 4549443396534272
+    m_Key: Key_Main_Menu_Credits
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

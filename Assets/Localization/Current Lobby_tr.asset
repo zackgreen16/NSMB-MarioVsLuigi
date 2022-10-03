@@ -118,6 +118,10 @@ MonoBehaviour:
     m_Localized: "G\xF6nder"
     m_Metadata:
       m_Items: []
+  - m_Id: 10023575865229312
+    m_Localized: ID'yi Kopyala
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

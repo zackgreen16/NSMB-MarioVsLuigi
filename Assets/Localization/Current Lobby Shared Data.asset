@@ -115,6 +115,10 @@ MonoBehaviour:
     m_Key: Key_Curr_Lobby_Send_Btn
     m_Metadata:
       m_Items: []
+  - m_Id: 10023575865229312
+    m_Key: Key_Curr_Lobby_ID_Copy
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

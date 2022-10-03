@@ -432,7 +432,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
 
         Camera.main.transform.position = levelCameraPositions[Random.Range(0, maps.Count)].transform.position;
         levelDropdown.AddOptions(maps);
-        languageDropdown.AddOptions(languages);
+        //languageDropdown.AddOptions(languages);
         LoadSettings(!PhotonNetwork.InRoom);
 
         //Photon stuff.
@@ -538,7 +538,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
         joinRoomBtn.interactable = connected && selectedRoomIcon != null && validName;
         createRoomBtn.interactable = connected && validName;
         region.interactable = connected;
-        LocalizationSettings.Instance.SetSelectedLocale(LocalizationSettings.AvailableLocales.Locales[languageDropdown.value]);
+        //LocalizationSettings.Instance.SetSelectedLocale(LocalizationSettings.AvailableLocales.Locales[languageDropdown.value]);
 
         if (pingsReceived) {
 

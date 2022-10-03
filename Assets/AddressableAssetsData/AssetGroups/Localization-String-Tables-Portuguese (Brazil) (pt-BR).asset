@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-String-Tables-Portuguese (Brazil) (pt-BR)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-String-Tables-Portuguese (Brazil) (pt-BR)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 0a2bd746394e2fc4b82e001ea09c216d
+  m_SerializeEntries:
+  - m_GUID: e7efd26cdff76104981137c1d9a16eff
+    m_Address: Controls Menu_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bea91fbffa42894469d2decd78ff1a1d
+    m_Address: Current Lobby_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d50dfb59c127bd64bbbd9e32f0e9650f
+    m_Address: Game Manager_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2e253a9f5d7d4840b7d5b83eb3a562d
+    m_Address: Loading Screen_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: de6cf83e20ee7444c82657126049e9a0
+    m_Address: Lobby Menu_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 44c764766683b1649baed712768a064b
+    m_Address: Main Menu_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f0849a3609095164487346d517740684
+    m_Address: Options Menu_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 36fb8f20f19c5a745a64aac988ea198f
+    m_Address: System Message_pt-BR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-pt-BR
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 478433f78b350d54e9bce21de89d3995, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 7acae7e6f96d39f47906d072b8fd3fe9, type: 2}
+    - {fileID: 11400000, guid: 1c12a33e2b319fa4b973b4363f17d219, type: 2}

@@ -1296,7 +1296,7 @@ public class PlayerController : MonoBehaviourPun, IFreezableEntity, ICustomSeria
         if (lives == 0)
             PlaySound(Enums.Sounds.Player_Sound_Death_2);
         else
-            PlaySound(cameraController.IsControllingCamera ? Enums.Sounds.Player_Sound_Death : Enums.Sounds.Player_Sound_DeathOthers);
+            PlaySound(cameraController.IsControllingCamera ? Enums.Sounds.Player_Sound_Death : Enums.Sounds.Player_Sound_Death_2);
 
         SpawnStars(1, deathplane);
         body.isKinematic = false;

@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-String-Tables-Afrikaans (af)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-String-Tables-Afrikaans (af)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: b14beb57496ee8c43b8eb4211c4cab07
+  m_SerializeEntries:
+  - m_GUID: d0b669fb07d01ab439a70c228eeb79d7
+    m_Address: Controls Menu_af
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-af
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c67a9badf21683b46bfbfc9882e7551e
+    m_Address: Current Lobby_af
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-af
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c811ca2ba000178478d1ba1b13b212ac
+    m_Address: Game Manager_af
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-af
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b41f836ae027aae48869b90086171e5f
+    m_Address: Language Menu_af
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-af
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 52cfa7bcf6245e049bc35acabac2df73
+    m_Address: Loading Screen_af
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-af
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e6a9ba2ea5b18ff46a058b5379972007
+    m_Address: Lobby Menu_af
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-af
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 623db1e5910155049a9b74672a73a476
+    m_Address: Main Menu_af
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-af
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e3a5e6b8c1fdc0d40b9e797df9e36100
+    m_Address: Options Menu_af
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-af
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 125c1faa4b9f073408da0d5cb397a9a6
+    m_Address: System Message_af
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-af
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: 478433f78b350d54e9bce21de89d3995, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 0d62af6ebb45ced45984f3771ba3a2dd, type: 2}
+    - {fileID: 11400000, guid: e370e96693d861940b52606bd821ecdc, type: 2}

@@ -120,6 +120,10 @@ MonoBehaviour:
     m_Localized: Send
     m_Metadata:
       m_Items: []
+  - m_Id: 10023575865229312
+    m_Localized: Copy ID
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

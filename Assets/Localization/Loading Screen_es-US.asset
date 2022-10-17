@@ -17,7 +17,31 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 7810dd8cba206e647ae35d0509501e17, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 48034447360
+    m_Localized: Listo!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4436601469108224
+    m_Localized: Empezando...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4435781524619264
+    m_Localized: Cargando...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4435858875973632
+    m_Localized: Esperando a los demas...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4436204721504256
+    m_Localized: Uniendose como Espectador...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12737505494532096
+    m_Localized: 'Mapa hecho por:'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

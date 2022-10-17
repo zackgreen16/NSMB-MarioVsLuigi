@@ -23,15 +23,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 75024793600
-    m_Localized: Lancer le match
+    m_Localized: Lancer Le Match
     m_Metadata:
       m_Items: []
   - m_Id: 346710835200
-    m_Localized: Quitter le salon
+    m_Localized: Quitter Le Salon
     m_Metadata:
       m_Items: []
   - m_Id: 523207147520
-    m_Localized: Entrez du texte...
+    m_Localized: Entrez Du Texte...
     m_Metadata:
       m_Items: []
   - m_Id: 1281633779712
@@ -99,7 +99,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 29648118579200
-    m_Localized: --- Configurations du salon ---
+    m_Localized: "--- Param\xE8tres de Salon ---"
     m_Metadata:
       m_Items: []
   - m_Id: 29966847934464

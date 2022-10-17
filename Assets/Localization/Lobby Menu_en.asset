@@ -16,10 +16,11 @@ MonoBehaviour:
     m_Code: en
   m_SharedData: {fileID: 11400000, guid: 6edae0da97a3bc748ab545bf6d2b6da4, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 279977529673515008
   m_TableData:
   - m_Id: 62320246784
-    m_Localized: Lobby
+    m_Localized: Lobby Menu
     m_Metadata:
       m_Items: []
   - m_Id: 356932354048
@@ -76,6 +77,24 @@ MonoBehaviour:
     m_Localized: Private Lobby
     m_Metadata:
       m_Items: []
+  - m_Id: 10303815615217664
+    m_Localized: 'Players: {players}/{maxplayers}'
+    m_Metadata:
+      m_Items:
+      - rid: 279977529673515008
+  - m_Id: 10305649973100544
+    m_Localized: '{playername}''s Lobby'
+    m_Metadata:
+      m_Items:
+      - rid: 279977529673515008
+  - m_Id: 10334731469291520
+    m_Localized: Cancel
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 279977529673515008
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00809305449b24000080d31def9c2400

@@ -24,7 +24,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3261009723392
-    m_Localized: "\u30ED\u30D3\u30FC\u30BB\u30EC\u30AF\u30C8"
+    m_Localized: "\u30B2\u30FC\u30E0\u3078\u3044\u304F"
     m_Metadata:
       m_Items: []
   - m_Id: 3465385574400
@@ -86,6 +86,14 @@ MonoBehaviour:
       (\u30E2\u30C7\u30EB)\r\nTeridaxXD001 (\u30E2\u30C7\u30EB)\r\nSkarph (\u30E2\u30C7\u30EB/\u30B5\u30A6\u30F3\u30C9)\r\nLukeWarnut
       (\u30B5\u30A6\u30F3\u30C9)\r\nLuke Hackett (\u30B5\u30A6\u30F3\u30C9)\r\nmindnomad
       (\u30B5\u30A6\u30F3\u30C9)\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10343647922061312
+    m_Localized: OK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12852318346379264
+    m_Localized: "\u30EA\u30F3\u30AF"
     m_Metadata:
       m_Items: []
   references:

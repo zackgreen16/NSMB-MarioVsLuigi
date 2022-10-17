@@ -73,6 +73,10 @@ MonoBehaviour:
     m_Localized: Errore
     m_Metadata:
       m_Items: []
+  - m_Id: 10343647922061312
+    m_Localized: Conferma
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

@@ -17,7 +17,44 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 3129e15249d64764f8ece87824baa34e, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 10343647922061312
+    m_Localized: Bevestig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250032128000
+    m_Localized: Hoof Spyskaart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3261009723392
+    m_Localized: Speel die Spel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3465385574400
+    m_Localized: Opsies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4571473870848
+    m_Localized: Hou op
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5004992937984
+    m_Localized: Oor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91940868816896
+    m_Localized: Opdatering Beskikbaar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 92632488574976
+    m_Localized: '''n Opdatering is beskikbaar:
+
+      Nuwe weergawe: {newversion}
+
+      Jou
+      weergawe: {yourversion}'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

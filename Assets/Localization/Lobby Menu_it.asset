@@ -16,8 +16,23 @@ MonoBehaviour:
     m_Code: it
   m_SharedData: {fileID: 11400000, guid: 6edae0da97a3bc748ab545bf6d2b6da4, type: 2}
   m_Metadata:
-    m_Items: []
-  m_TableData: []
+    m_Items:
+    - rid: 279977529673515016
+  m_TableData:
+  - m_Id: 10303815615217664
+    m_Localized: 'Giocatori: {players}/{maxplayers}'
+    m_Metadata:
+      m_Items:
+      - rid: 279977529673515016
+  - m_Id: 10305649973100544
+    m_Localized: 
+    m_Metadata:
+      m_Items:
+      - rid: 279977529673515016
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 279977529673515016
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00809305449b24000080d31def9c2400

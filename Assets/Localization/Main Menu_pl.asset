@@ -17,7 +17,44 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 3129e15249d64764f8ece87824baa34e, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 10343647922061312
+    m_Localized: "Potwierd\u017A"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3261009723392
+    m_Localized: "Graj w Gr\u0119"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250032128000
+    m_Localized: "Menu G\u0142\xF3wne"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3465385574400
+    m_Localized: Opcje
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4571473870848
+    m_Localized: "Wyjd\u017A"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5004992937984
+    m_Localized: Informacje
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91940868816896
+    m_Localized: "Dost\u0119pna Aktualizacja"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 92632488574976
+    m_Localized: "Dost\u0119pna jest aktualizacja:\r\nNowa Wersja: {newversion}\r\nTwoja
+      Wersja: {yourversion}"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93571073146880
+    m_Localized: "Przejd\u017A do Pobierania"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

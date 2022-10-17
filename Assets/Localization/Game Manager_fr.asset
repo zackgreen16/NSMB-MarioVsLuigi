@@ -36,11 +36,11 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 1669518819328
     m_Localized: "Vous \xEAtes l'h\xF4te. Voulez-vous arr\xEAter le match actuel,
-      ou retourner au menu principal?"
+      ou retourner au salon principal ?"
     m_Metadata:
       m_Items: []
   - m_Id: 3429020958720
-    m_Localized: Lobby Principal
+    m_Localized: Salon Principal
     m_Metadata:
       m_Items: []
   - m_Id: 3728339075072
@@ -57,6 +57,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 4312790171648
     m_Localized: Scoreboard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12742582082961408
+    m_Localized: "{playername} a gagn\xE9 !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12742625183629312
+    m_Localized: Match nul...
     m_Metadata:
       m_Items: []
   references:

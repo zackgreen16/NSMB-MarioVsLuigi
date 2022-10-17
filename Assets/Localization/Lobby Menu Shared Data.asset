@@ -71,6 +71,18 @@ MonoBehaviour:
     m_Key: Key_Lobby_Menu_Join_Box_Confirm
     m_Metadata:
       m_Items: []
+  - m_Id: 10303815615217664
+    m_Key: Key_Lobby_Menu_Lobby_Players_Count
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10305649973100544
+    m_Key: Key_Lobby_Menu_Lobby_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10334731469291520
+    m_Key: Key_Lobby_Menu_Join_Box_Cancel
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

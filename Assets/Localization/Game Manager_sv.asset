@@ -59,6 +59,14 @@ MonoBehaviour:
     m_Localized: Huvudmeny
     m_Metadata:
       m_Items: []
+  - m_Id: 12742582082961408
+    m_Localized: '{playername} Vann!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12742625183629312
+    m_Localized: Det blev oavgjort...
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

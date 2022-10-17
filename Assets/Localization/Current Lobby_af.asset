@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 75024793600
-    m_Localized: Begin die spel
+    m_Localized: Begin Die Spel
     m_Metadata:
       m_Items: []
   - m_Id: 346710835200
@@ -119,7 +119,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 523207147520
-    m_Localized: Voer teks in...
+    m_Localized: Voer Teks In...
     m_Metadata:
       m_Items: []
   references:

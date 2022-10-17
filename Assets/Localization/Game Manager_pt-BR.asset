@@ -59,6 +59,14 @@ MonoBehaviour:
       ao menu principal?"
     m_Metadata:
       m_Items: []
+  - m_Id: 12742582082961408
+    m_Localized: '{playername} Ganhou!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12742625183629312
+    m_Localized: Empate...
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

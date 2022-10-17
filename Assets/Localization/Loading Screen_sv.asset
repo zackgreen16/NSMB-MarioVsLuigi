@@ -17,7 +17,31 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 7810dd8cba206e647ae35d0509501e17, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 48034447360
+    m_Localized: Redo!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4436204721504256
+    m_Localized: "G\xE5r med som \xE5sk\xE5dare..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4436601469108224
+    m_Localized: "B\xF6rjar..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4435781524619264
+    m_Localized: Laddar...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4435858875973632
+    m_Localized: "V\xE4ntar p\xE5 andra..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12737505494532096
+    m_Localized: 'Bana gjord av:'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

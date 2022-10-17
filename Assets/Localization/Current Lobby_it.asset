@@ -99,11 +99,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 75024793600
-    m_Localized: Avvia la Partita
+    m_Localized: Avvia La Partita
     m_Metadata:
       m_Items: []
   - m_Id: 346710835200
-    m_Localized: Esci dalla Lobby
+    m_Localized: Esci Dalla Lobby
     m_Metadata:
       m_Items: []
   - m_Id: 10023575865229312
@@ -111,7 +111,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 523207147520
-    m_Localized: Scrivi qui...
+    m_Localized: Scrivi Qui...
     m_Metadata:
       m_Items: []
   - m_Id: 31978536796160

@@ -26,6 +26,47 @@ MonoBehaviour:
     m_Localized: Telbord
     m_Metadata:
       m_Items: []
+  - m_Id: 107748753408
+    m_Localized: Pouse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 702438146048
+    m_Localized: Hervat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1045494464512
+    m_Localized: Opsies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1473313472512
+    m_Localized: Hou op
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3039382700032
+    m_Localized: Hou op
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1669518819328
+    m_Localized: "Jy is Gasheer. Wil jy die huidige wedstryd be\xEBindig, of wil
+      jy terugkeer na die hoofkieslys?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3728339075072
+    m_Localized: Eindwedstryd
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3429020958720
+    m_Localized: Hoof spyskaart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12742582082961408
+    m_Localized: '{playername} Wen!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12742625183629312
+    m_Localized: Dis 'n loting...
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

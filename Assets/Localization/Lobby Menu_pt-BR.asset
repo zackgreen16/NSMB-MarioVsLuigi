@@ -16,8 +16,59 @@ MonoBehaviour:
     m_Code: pt-BR
   m_SharedData: {fileID: 11400000, guid: 6edae0da97a3bc748ab545bf6d2b6da4, type: 2}
   m_Metadata:
-    m_Items: []
-  m_TableData: []
+    m_Items:
+    - rid: 279977529673515011
+  m_TableData:
+  - m_Id: 62320246784
+    m_Localized: Salas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 356932354048
+    m_Localized: Entrar na sala
+    m_Metadata:
+      m_Items: []
+  - m_Id: 532753383424
+    m_Localized: Criar sala
+    m_Metadata:
+      m_Items: []
+  - m_Id: 933091311616
+    m_Localized: Escolha um apelido...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1220787011584
+    m_Localized: 'Apelido:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 35946474209280
+    m_Localized: Entrar em Sala Privada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 79597891977216
+    m_Localized: Criar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78331849703424
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 77263745024000
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10303815615217664
+    m_Localized: 'Jogadores: {players}/{maxplayers}'
+    m_Metadata:
+      m_Items:
+      - rid: 279977529673515011
+  - m_Id: 10305649973100544
+    m_Localized: 
+    m_Metadata:
+      m_Items:
+      - rid: 279977529673515011
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 279977529673515011
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00809305449b24000080d31def9c2400

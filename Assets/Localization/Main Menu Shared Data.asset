@@ -67,6 +67,14 @@ MonoBehaviour:
     m_Key: Key_Main_Menu_Credits
     m_Metadata:
       m_Items: []
+  - m_Id: 10343647922061312
+    m_Key: Key_Main_Menu_Error_Box_Confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12852318346379264
+    m_Key: Key_Main_Menu_Link
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

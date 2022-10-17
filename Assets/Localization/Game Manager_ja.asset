@@ -43,7 +43,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3429020958720
-    m_Localized: "\u30ED\u30D3\u30FC\u30BB\u30EC\u30AF\u30C8\u3078"
+    m_Localized: "\u30ED\u30D3\u30FC\u305B\u3093\u305F\u304F\u3078"
     m_Metadata:
       m_Items: []
   - m_Id: 3728339075072
@@ -56,6 +56,14 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 4312790171648
     m_Localized: "\u30B9\u30B3\u30A2\u30DC\u30FC\u30C9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12742582082961408
+    m_Localized: "{playername}\u306E\u304B\u3061!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12742625183629312
+    m_Localized: "\u3072\u304D\u308F\u3051"
     m_Metadata:
       m_Items: []
   references:

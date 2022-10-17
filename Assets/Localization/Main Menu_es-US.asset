@@ -17,7 +17,48 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 3129e15249d64764f8ece87824baa34e, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 10343647922061312
+    m_Localized: Confirmar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250032128000
+    m_Localized: "Men\xFA Principal"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3261009723392
+    m_Localized: Jugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3465385574400
+    m_Localized: Opciones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4571473870848
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5004992937984
+    m_Localized: "Informaci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 92632488574976
+    m_Localized: "Una actualizaci\xF3n esta disponible:\r\nNueva Versi\xF3n: {newversion}\r\nTu
+      Versi\xF3n: {yourversion}"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93571073146880
+    m_Localized: Descargar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93779215482880
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91940868816896
+    m_Localized: "Actualizaci\xF3n Disponible"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

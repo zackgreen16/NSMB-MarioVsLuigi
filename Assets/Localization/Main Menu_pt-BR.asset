@@ -17,7 +17,44 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 3129e15249d64764f8ece87824baa34e, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 10343647922061312
+    m_Localized: Confirmar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 250032128000
+    m_Localized: Menu Principal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3261009723392
+    m_Localized: Jogar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3465385574400
+    m_Localized: "Op\xE7\xF5es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4571473870848
+    m_Localized: Sair
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5004992937984
+    m_Localized: "Cr\xE9ditos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 91940868816896
+    m_Localized: "Atualiza\xE7\xE3o Dispon\xEDvel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 92632488574976
+    m_Localized: "Uma atualiza\xE7\xE3o est\xE1 dispon\xEDvel: \r\nNova Vers\xE3o:
+      {newversion} \r\nVers\xE3o Atual: {yourversion}"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93571073146880
+    m_Localized: Ir para o Download
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

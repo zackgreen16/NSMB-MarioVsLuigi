@@ -107,7 +107,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 346710835200
-    m_Localized: Sair da Sala
+    m_Localized: Sair Da Sala
     m_Metadata:
       m_Items: []
   - m_Id: 31978536796160
@@ -115,7 +115,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 523207147520
-    m_Localized: Inserir texto...
+    m_Localized: Inserir Texto...
     m_Metadata:
       m_Items: []
   references:
